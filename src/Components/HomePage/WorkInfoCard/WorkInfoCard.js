@@ -17,12 +17,8 @@ const WorkInfoCard = props => {
                 <p>Time there</p>
                 <p> Description</p>
             </div>
-            <div className={classes.CardContainer}>
-                <p>Company</p>
-                <p>Position</p>
-                <p>Time there</p>
-                <p>Description</p>
-            </div>
+
+
         </div>
     );
 };

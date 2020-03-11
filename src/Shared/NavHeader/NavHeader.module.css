@@ -1,4 +1,4 @@
-.Header{
+/* .Header{
       margin: 20px auto;
   width: 80%;
   text-align: center;
@@ -6,4 +6,12 @@
   border: 1px solid #eee;
   padding: 10px;
   box-sizing: border-box;
+} */
+.Name{
+  font-size: 20px;
+  cursor: pointer;
+}
+.Name:hover{
+font-size: 50px;
+cursor: pointer;
 }
