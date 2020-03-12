@@ -1,30 +1,70 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import classes from './ContactMeForm.module.css';
-class ContactMeForm extends Component {
+import Button from '@material-ui/core/Button';
+import Icon from '@material-ui/core/Icon';
+import SaveIcon from '@material-ui/icons/Save';
+import SendIcon from '@material-ui/icons/Send';
+import axios from 'axios';
 
-    handleFormSubmit = (data) => {
+const ContactMeForm = () => {
 
+    const [email, setemail] = useState('');
+    const [title, setTitle] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleChange = (e) => {
+        e.preventDefault();
+        if (e.target.id == 'email') {
+            console.log('email')
+            setemail(e.target.value)
+        } else if (e.target.id == 'title') {
+            setTitle(e.target.value)
+        }
+        else {
+            console.log('message')
+            setMessage(e.target.value)
+        }
     }
-    render() {
 
-        return (
-            <div>
-                <form
-                    onSubmit={this.handleFormSubmit}
-                    className={classes.FormContainer} autoComplete="on">
-                    <TextField id="outlined-basic" label="Your Name" variant="outlined" />
-                    <br></br>
-                    <TextField id="outlined-basic" label="Title" variant="outlined" />`
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const dataToSubmit = {
+            email: email,
+            title: title,
+            message: message
+        }
+        axios.post('/api/form', dataToSubmit).then(() => console.log('post sent!')).catch(err => err, 'request couldnt be sent!')
+        console.log('data sent', dataToSubmit)
+    }
+
+
+    return (
+        <div>
+            <form
+                onSubmit={handleSubmit}
+                className={classes.FormContainer} autoComplete="on">
+                <TextField id="email" label="Your email" variant="outlined" value={email} onChange={handleChange} />
+                <TextField id="title" label="Title" variant="outlined" value={title} onChange={handleChange} />`
                     <TextField
-                        multiline
-                        rows='4'
-                        id="outlined-basic" label="Message" variant="outlined" />
-                </form>
-            </div >
-        );
-    }
+                    onChange={handleChange}
+                    multiline
+                    rows='4'
+                    id="message" label="Message" variant="outlined" value={message} />
+                <Button
+                    onClick={handleSubmit}
+                    variant="contained"
+                    color="primary"
+                    style={{ marginTop: '20px' }}
+                    startIcon={<SendIcon></SendIcon>}
+                >
+                    Send!
+                    </Button>
+
+            </form>
+        </div >
+    );
 
 };
 
