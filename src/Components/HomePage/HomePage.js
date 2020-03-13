@@ -5,6 +5,7 @@ const HomePage = () => {
     return (
         <div className={classes.HomePageContainer}>
             <WorkInfoCard />
+
         </div>
     );
 };

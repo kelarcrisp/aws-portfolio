@@ -6,20 +6,7 @@ const SideProjects = () => {
             <div className={classes.SideProjectItem}>Project1</div>
             <div className={classes.SideProjectItem}>Project2</div>
             <div className={classes.SideProjectItem}>Project3</div>
-            <div className={classes.SideProjectItem}>ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasd
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
-            ldasdasdasdasda
+            <div className={classes.SideProjectItem}>Project 4
 </div>
         </div>
     );

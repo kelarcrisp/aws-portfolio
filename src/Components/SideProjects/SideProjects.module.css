@@ -1,19 +1,19 @@
 .SideProjectsContainer {
-   position: fixed;
+   position: relative;
+   column-count: 2;
     height: 100%;
     width: 100%;
   background: linear-gradient(90deg, #a1c4fd,  #c2e9fb);
 }
 
 .SideProjectItem{
-    height: 300px;
-    width: 400px;
-    float: left;
-    position: relative;
+    height: 400px;
+    width: 400px; 
     text-align: center;
     box-shadow: 1px 2px 1px #ccc;
     padding: 10px;
     box-sizing: border-box;
     margin-top: 40px;
-    margin-left: 20%;
+    margin-left: 20%; 
+    margin-bottom: 5%;
 }
