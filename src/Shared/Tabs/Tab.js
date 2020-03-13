@@ -5,6 +5,7 @@ import Tab from '@material-ui/core/Tab';
 import ComputerIcon from '@material-ui/icons/Computer';
 import InfoIcon from '@material-ui/icons/Info';
 import EmailIcon from '@material-ui/icons/Email';
+import HomeIcon from '@material-ui/icons/Home';
 const MyTab = (props) => {
 
     const history = useHistory();
@@ -21,19 +22,23 @@ const MyTab = (props) => {
 
         history.push("/ContactForm");
     }
+    function handleHome() {
+        history.push('/')
+    }
     return (
 
         <Tabs
             className={props.className}
             value={props.value}
             onChange={props.onChange}
+            indicatorColor="primary"
 
         >
 
 
-
+            <Tab onClick={() => handleHome()} icon={<HomeIcon />} label="Home" />
             <Tab onClick={() => handleProjects()} icon={<ComputerIcon />} label="Projects" />
-            <Tab onClick={() => handleAbout()} icon={<InfoIcon />} label="About" />
+            {/* <Tab onClick={() => handleAbout()} icon={<InfoIcon />} label="About" /> */}
             <Tab
                 onClick={() => handleContact()} icon={<EmailIcon />} label="Email" />
 

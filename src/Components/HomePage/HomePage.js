@@ -3,7 +3,7 @@ import classes from './HomePage.module.css';
 import WorkInfoCard from './WorkInfoCard/WorkInfoCard'
 const HomePage = () => {
     return (
-        <div>
+        <div className={classes.HomePageContainer}>
             <WorkInfoCard />
         </div>
     );

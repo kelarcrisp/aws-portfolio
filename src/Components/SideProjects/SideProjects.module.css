@@ -1,17 +1,19 @@
 .SideProjectsContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 15%;
-    grid-gap: 20px;
+   position: fixed;
+    height: 100%;
+    width: 100%;
+  background: linear-gradient(90deg, #a1c4fd,  #c2e9fb);
 }
 
 .SideProjectItem{
+    height: 300px;
     width: 400px;
-    height: 200px;
+    float: left;
+    position: relative;
     text-align: center;
-    box-shadow: 0 2px 3px #ccc;
-    border: 1px solid #eee;
+    box-shadow: 1px 2px 1px #ccc;
     padding: 10px;
     box-sizing: border-box;
     margin-top: 40px;
+    margin-left: 20%;
 }

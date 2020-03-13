@@ -19,9 +19,11 @@ import Tab from '@material-ui/core/Tab';
 import { useHistory } from "react-router-dom";
 import classes from './NavHeader.module.css';
 const styles = {
+
     root: {
         display: 'flex',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+
     },
     Tabs: {
         marginRight: '20px',
@@ -31,14 +33,13 @@ const styles = {
         marginLeft: '5%',
         height: '100px',
         width: 'auto',
-        border: '1px solid black',
         display: 'flex',
         flexWrap: 'wrap'
 
     },
     Name: {
         marginTop: '40px',
-        marginLeft: '20px',
+        paddingLeft: '20%',
         fontSize: '25px'
     },
     NameHover: {
@@ -72,7 +73,9 @@ class NavHeader extends React.Component {
         return (
             <div>
 
-                <Paper square elevation={0} className={classes.root}>
+                <Paper square elevation={0}
+                    style={{ background: 'linear-gradient(90deg, #a1c4fd,  #c2e9fb)' }}
+                    className={classes.root}>
                     <div className={classes.Links}>
                         <IconButton
                             onClick={() => window.location.href = 'https://github.com/epicoding95'}
@@ -98,17 +101,16 @@ class NavHeader extends React.Component {
                         </IconButton>
                     </div>
                     <div
-                        className={classes.Name}>Kelars profile!</div>
+                        className={classes.Name}>Kelar Crisp</div>
                     <div className={classes.Tabs}>
                         <MyTab
                             onChange={this.handleChange}
-                            className={classes.tabs}
+                            className={classes.Tabs}
                             value={this.state.value}
 
                         />
                     </div>
                 </Paper>
-                <hr></hr>
             </div>
         );
     }

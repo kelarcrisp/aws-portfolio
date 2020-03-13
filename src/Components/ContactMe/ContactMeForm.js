@@ -41,13 +41,14 @@ const ContactMeForm = () => {
 
 
     return (
-        <div>
+        <div className={classes.ContactContainer}>
             <form
                 onSubmit={handleSubmit}
-                className={classes.FormContainer} autoComplete="on">
-                <TextField id="email" label="Your email" variant="outlined" value={email} onChange={handleChange} />
-                <TextField id="title" label="Title" variant="outlined" value={title} onChange={handleChange} />`
+                className={classes.FormInfoContainer} autoComplete="on">
+                <TextField className={classes.TextField} id="email" label="Your Email " variant="outlined" value={email} onChange={handleChange} />
+                <TextField className={classes.TextField} id="title" label="Title" variant="outlined" value={title} onChange={handleChange} />`
                     <TextField
+                    className={classes.TextField}
                     onChange={handleChange}
                     multiline
                     rows='4'
@@ -56,7 +57,7 @@ const ContactMeForm = () => {
                     onClick={handleSubmit}
                     variant="contained"
                     color="primary"
-                    style={{ marginTop: '20px' }}
+                    style={{ marginTop: '50px' }}
                     startIcon={<SendIcon></SendIcon>}
                 >
                     Send!
