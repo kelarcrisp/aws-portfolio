@@ -23,6 +23,7 @@ const styles = {
     root: {
         display: 'flex',
         justifyContent: 'space-between',
+        animation: `$root 3s`
 
     },
     Tabs: {
@@ -51,7 +52,17 @@ const styles = {
     },
     TextColor: {
         color: 'black'
-    }
+    },
+    "@keyframes root": {
+        "0%": {
+            opacity: 0,
+            transform: "translateY(-200%)"
+        },
+        "100%": {
+            opacity: 1,
+            transform: "translateY(0)"
+        }
+    },
 
 };
 
