@@ -10,7 +10,7 @@ const SideProjects = () => {
             <div className={classes.SideProjectItemRight}>Burger Builder <img src={require('../../assets/images/newimage.png')} /> Burger Builder has been used as a practice project in which i've used to learn/test different ideas between React/Redux/Firebase.</div>
             <div className={classes.SideProjectItemRight}>Doctor Lookup<img src={require('../../assets/images/newimage.png')} />
                 <br></br>
-                Fun little website that allows you search for Doctors in your area based on the doctors last name or the condition you're facing.</div>
+                Fun little website that allows you to search for Doctors in your area based on the doctors last name or the condition you're facing.</div>
         </div>
     );
 };
