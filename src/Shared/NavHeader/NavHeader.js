@@ -40,7 +40,7 @@ const styles = {
     },
     Name: {
         marginTop: '40px',
-        paddingLeft: '20%',
+        paddingLeft: '10%',
         fontSize: '25px'
     },
     NameHover: {
