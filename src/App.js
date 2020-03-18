@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import NavHeader from './Shared/NavHeader/NavHeader';
 import HomePage from './Components/HomePage/HomePage';
-import { Grid, Paper } from '@material-ui/core';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import SideProjects from './Components/SideProjects/SideProjects'
 import About from './Components/About/About';

@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import ComputerIcon from '@material-ui/icons/Computer';
-import InfoIcon from '@material-ui/icons/Info';
 import EmailIcon from '@material-ui/icons/Email';
 import HomeIcon from '@material-ui/icons/Home';
 const MyTab = (props) => {
@@ -14,10 +13,10 @@ const MyTab = (props) => {
 
         history.push("/Projects");
     }
-    function handleAbout() {
+    // function handleAbout() {
 
-        history.push("/About");
-    }
+    //     history.push("/About");
+    // }
     function handleContact() {
 
         history.push("/ContactForm");

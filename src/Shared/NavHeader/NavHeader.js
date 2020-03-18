@@ -1,23 +1,15 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
-import Tabs from '@material-ui/core/Tabs';
-import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
 import IconButton from '@material-ui/core/IconButton';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import AppBar from '@material-ui/core/AppBar'
-import ComputerIcon from '@material-ui/icons/Computer';
-import InfoIcon from '@material-ui/icons/Info';
-import EmailIcon from '@material-ui/icons/Email';
-import { NavLink } from 'react-router-dom'
+
 import MyTab from '../Tabs/Tab';
-import Tab from '@material-ui/core/Tab';
 import { useHistory } from "react-router-dom";
-import classes from './NavHeader.module.css';
+
 const styles = {
 
     root: {

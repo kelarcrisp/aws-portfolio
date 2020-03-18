@@ -1,25 +1,23 @@
-import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React, { useState, useRef } from 'react';
 import TextField from '@material-ui/core/TextField';
 import classes from './ContactMeForm.module.css';
 import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
-import SaveIcon from '@material-ui/icons/Save';
 import SendIcon from '@material-ui/icons/Send';
 import axios from 'axios';
 
 const ContactMeForm = () => {
 
-    const [email, setemail] = useState('');
+    const [email, setEmail] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
 
+
     const handleChange = (e) => {
         e.preventDefault();
-        if (e.target.id == 'email') {
+        if (e.target.id === 'email') {
             console.log('email')
-            setemail(e.target.value)
-        } else if (e.target.id == 'title') {
+            setEmail(e.target.value)
+        } else if (e.target.id === 'title') {
             setTitle(e.target.value)
         }
         else {
@@ -28,6 +26,7 @@ const ContactMeForm = () => {
         }
     }
 
+    let myForm = useRef(null)
     const handleSubmit = (e) => {
         e.preventDefault();
         const dataToSubmit = {
@@ -35,14 +34,18 @@ const ContactMeForm = () => {
             title: title,
             message: message
         }
-        axios.post('/api/form', dataToSubmit).then(() => console.log('post sent!')).catch(err => err, 'request couldnt be sent!')
+        setEmail('');
+        setTitle('');
+        setMessage('');
+        axios.post('/api/form', dataToSubmit).then(() => console.log('sent to server!')
+        ).catch(err => err, 'request couldnt be sent!')
         console.log('data sent', dataToSubmit)
     }
-
 
     return (
         <div className={classes.ContactContainer}>
             <form
+                ref={myForm}
                 onSubmit={handleSubmit}
                 className={classes.FormInfoContainer} autoComplete="on">
                 <TextField className={classes.TextField} id="email" label="Your Email " variant="outlined" value={email} onChange={handleChange} />
