@@ -35,7 +35,7 @@ app.post('/api/form', (req, res) => {
 
     let mailOptions = {
         from: req.body.email,
-        to: 'kelcrisp007@icloud.com',
+        to: 'redaijz@gmail.com',
         subject: req.body.title,
         text: output,
     }
