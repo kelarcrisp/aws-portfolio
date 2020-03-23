@@ -32,8 +32,8 @@ const styles = {
     },
     Name: {
         marginTop: '40px',
-        paddingLeft: '10%',
-        fontSize: '25px'
+        paddingLeft: '15%',
+        fontSize: '35px'
     },
     NameHover: {
         fontSize: '50px',

@@ -3,7 +3,12 @@ const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer');
 const dotenv = require('dotenv');
 const app = express();
-
+const cors = require('cors');
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
 dotenv.config();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -35,7 +40,7 @@ app.post('/api/form', (req, res) => {
 
     let mailOptions = {
         from: req.body.email,
-        to: 'redaijz@gmail.com',
+        to: 'kelcrisp007@icloud.com',
         subject: req.body.title,
         text: output,
     }

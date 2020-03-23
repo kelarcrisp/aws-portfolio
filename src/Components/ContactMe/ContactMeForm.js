@@ -10,7 +10,7 @@ const ContactMeForm = () => {
     const [email, setEmail] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
-
+    const [isSent, setIsSent] = useState(false);
 
     const handleChange = (e) => {
         e.preventDefault();
@@ -26,7 +26,6 @@ const ContactMeForm = () => {
         }
     }
 
-    let myForm = useRef(null)
     const handleSubmit = (e) => {
         e.preventDefault();
         const dataToSubmit = {
@@ -34,6 +33,7 @@ const ContactMeForm = () => {
             title: title,
             message: message
         }
+        setIsSent(true);
         setEmail('');
         setTitle('');
         setMessage('');
@@ -42,10 +42,13 @@ const ContactMeForm = () => {
         console.log('data sent', dataToSubmit)
     }
 
+    let showSentMessage = null;
+    if (isSent) {
+        showSentMessage = 'Your email has successfully been sent!'
+    }
     return (
         <div className={classes.ContactContainer}>
             <form
-                ref={myForm}
                 onSubmit={handleSubmit}
                 className={classes.FormInfoContainer} autoComplete="on">
                 <TextField className={classes.TextField} id="email" label="Your Email " variant="outlined" value={email} onChange={handleChange} />
@@ -65,7 +68,7 @@ const ContactMeForm = () => {
                 >
                     Send!
                     </Button>
-
+                <div className={classes.ShowSentMessage}>{showSentMessage}</div>
             </form>
         </div >
     );
