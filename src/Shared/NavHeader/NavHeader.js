@@ -9,10 +9,20 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 
 import MyTab from '../Tabs/Tab';
 import { useHistory } from "react-router-dom";
+import zIndex from '@material-ui/core/styles/zIndex';
 
 const styles = {
 
-    root: {
+
+    // ContainerDiv: {
+    //     position: 'fixed',
+    //     width: '100%',
+    //     left: '0',
+    //     boxSizing: 'border-box',
+    //     zIndex: '1',
+    //     marginBottom: '200px'
+    // },
+    Root: {
         display: 'flex',
         justifyContent: 'space-between',
         animation: `$root 3s`
@@ -38,9 +48,6 @@ const styles = {
     NameHover: {
         fontSize: '50px',
         cursor: 'pointer'
-    },
-    Indicator: {
-        backgroundColor: 'black'
     },
     TextColor: {
         color: 'black'
@@ -74,11 +81,10 @@ class NavHeader extends React.Component {
         const { classes } = this.props;
 
         return (
-            <div>
-
+            <div className={classes.ContainerDiv}>
                 <Paper square elevation={0}
-                    style={{ background: 'linear-gradient(90deg, #a1c4fd,  #c2e9fb)' }}
-                    className={classes.root}>
+                    style={{ background: 'linear-gradient(90deg, #fdfcfb ,  #e2d1c3' }}
+                    className={classes.Root}>
                     <div className={classes.Links}>
                         <IconButton
                             onClick={() => window.location.href = 'https://github.com/epicoding95'}

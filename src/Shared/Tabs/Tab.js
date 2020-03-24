@@ -30,11 +30,11 @@ const MyTab = (props) => {
             className={props.className}
             value={props.value}
             onChange={props.onChange}
-            indicatorColor="primary"
+            TabIndicatorProps={{ style: { background: 'black' } }}>
 
-        >
-
-
+            >
+    
+    
             <Tab onClick={() => handleHome()} icon={<HomeIcon />} label="Home" />
             <Tab onClick={() => handleProjects()} icon={<ComputerIcon />} label="Projects" />
             {/* <Tab onClick={() => handleAbout()} icon={<InfoIcon />} label="About" /> */}
