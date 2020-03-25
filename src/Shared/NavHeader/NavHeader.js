@@ -25,7 +25,7 @@ const styles = {
     Root: {
         display: 'flex',
         justifyContent: 'space-between',
-        // animation: `$root 3s`,
+        animation: `$root 3s`,
         width: 'auto'
     },
     Tabs: {

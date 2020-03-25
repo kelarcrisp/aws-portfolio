@@ -10,10 +10,11 @@ class HomePage extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.setState({ showDropDown: true })
-            localStorage.setItem('showDropDown', this.state.showDropDown)
+            if (!localStorage.getItem('showDropDown')) {
+                localStorage.setItem('showDropDown', this.state.showDropDown)
+            }
         }, 4000)
     }
-
 
     render() {
         let loadDropDown;
