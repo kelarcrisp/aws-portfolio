@@ -12,7 +12,7 @@ app.use(function (req, res, next) {
 dotenv.config();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-
+app.use(cors({ origin: "*" }));
 
 app.post('/api/form', (req, res) => {
     console.log('got into app.post', req)

@@ -4,9 +4,9 @@
     width: 100%;
   overflow-y: auto;
     background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
-  animation: HomePageContainer 3s;
+  /* animation: HomePageContainer 3s; */
 }
-
+/* 
 @keyframes HomePageContainer{
 from {
   background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
@@ -19,4 +19,4 @@ to {
   opacity: 1;
    transform: translateY(0)
 }
-}
+} */

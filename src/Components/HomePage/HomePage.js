@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState, Component } from 'react';
 import classes from './HomePage.module.css';
 import WorkInfoCard from './WorkInfoCard/WorkInfoCard'
-const HomePage = () => {
-    return (
-        <div className={classes.HomePageContainer}>
-            <WorkInfoCard />
+class HomePage extends Component {
 
-        </div>
-    );
+    render() {
+        let loadDropDown = <div className={classes.HomePageContainer}> <WorkInfoCard /></div>
+
+        return (
+            <div>
+                {loadDropDown}
+            </div>
+        );
+    }
+
+
 };
 
 export default HomePage;
