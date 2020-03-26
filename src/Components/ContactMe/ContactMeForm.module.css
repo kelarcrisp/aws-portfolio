@@ -24,6 +24,10 @@
 animation: fadeOut 3s;
 }
 
+.ContactHeader{
+    display: none;
+}
+
 
 @keyframes fadeOut {
     from {top: 0px;}
@@ -35,6 +39,10 @@ animation: fadeOut 3s;
         width: 200px;
     }
     .FormInfoContainer{
-margin-left: 60px;
+        margin-left: 60px;
+    }
+    .ContactHeader{
+        display: block;
+        margin-left: 80px;
     }
 }

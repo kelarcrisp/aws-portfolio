@@ -48,6 +48,7 @@ const ContactMeForm = () => {
     }
     return (
         <div className={classes.ContactContainer}>
+            <h3 className={classes.ContactHeader}>Fill out the form to directly contact me by Email!</h3>
             <form
                 onSubmit={handleSubmit}
                 className={classes.FormInfoContainer} autoComplete="on">
