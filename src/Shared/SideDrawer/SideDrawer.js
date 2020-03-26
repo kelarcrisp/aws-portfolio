@@ -26,6 +26,7 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         padding: '0',
         display: 'none',
+        background: 'green',
         '@media (max-width: 400px)': {
             // width: "60%",
             display: "block"
@@ -56,15 +57,19 @@ const useStyles = makeStyles(theme => ({
         width: drawerWidth,
         flexShrink: 0,
         whiteSpace: 'nowrap',
+        background: 'green'
     },
     drawerOpen: {
-        width: '180px',
+        width: '155px',
+        fontFamily: 'Raleway, sans-serif',
+        background: 'linear-gradient(90deg, #fdfcfb,  #e2d1c3);',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.enteringScreen,
         }),
     },
     drawerClose: {
+        background: 'linear-gradient(90deg, #fdfcfb,  #e2d1c3);',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -98,6 +103,10 @@ const useStyles = makeStyles(theme => ({
         alignitems: 'center',
         marginTop: '150px',
         marginLeft: '10px'
+    },
+    paper: {
+        background: 'linear - gradient(90deg, #fdfcfb, #e2d1c3',
+        color: 'black'
     }
 }));
 
@@ -135,8 +144,7 @@ export default function MiniDrawer() {
 
     return (
         <div className={classes.root}>
-            <CssBaseline />
-
+            {/* <CssBaseline /> */}
             <Drawer
                 variant="permanent"
                 className={clsx(classes.drawer, {
@@ -147,27 +155,28 @@ export default function MiniDrawer() {
                     paper: clsx({
                         [classes.drawerOpen]: open,
                         [classes.drawerClose]: !open,
+                        [classes.paper]: open || !open,
                     }),
                 }}
             >
                 <div className={classes.toolbar}>
                     <IconButton onClick={handleDrawerClose}>
-                        {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+                        {theme.direction != 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
                     </IconButton>
                 </div>
                 <Divider />
-                <List>
+                <List style={{ marginLeft: '10px' }}>
                     <ListItem button>
                         <HomeIcon onClick={() => handleHome()} />
-                        <ListItemText primary='Home' inset />
+                        <ListItemText primary='Home' style={{ marginLeft: '35px' }} />
                     </ListItem>
                     <ListItem button>
                         <ComputerIcon onClick={() => handleProjects()} />
-                        <ListItemText primary='Projects' inset />
+                        <ListItemText primary='Projects' style={{ marginLeft: '35px' }} />
                     </ListItem>
                     <ListItem button>
                         <EmailIcon onClick={() => handleContact()} />
-                        <ListItemText primary='Email' inset />
+                        <ListItemText primary='Email' style={{ marginLeft: '35px' }} />
                     </ListItem>
                 </List>
                 <Divider />

@@ -8,3 +8,18 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.HeaderText{
+    display:none;
+   font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-left: 15px;
+}
+
+@media (max-width: 400px){
+    .CardContainer{
+        width: 50%;
+    }
+    .HeaderText{
+        display: block;
+    }
+}

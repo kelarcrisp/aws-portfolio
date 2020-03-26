@@ -29,3 +29,12 @@ animation: fadeOut 3s;
     from {top: 0px;}
   to {top: 200px;}
 } 
+
+@media (max-width: 400px){
+    .TextField{
+        width: 200px;
+    }
+    .FormInfoContainer{
+margin-left: 60px;
+    }
+}

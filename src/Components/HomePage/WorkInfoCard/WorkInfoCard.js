@@ -4,6 +4,7 @@ import classes from './WorkInfoCard.module.css';
 const WorkInfoCard = props => {
     return (
         <div>
+            <h3 className={classes.HeaderText}>Kelar Crisp </h3>
             <div className={classes.CardContainer}>
                 <p>Replenium</p>
                 <p>Full-time Contract position</p>

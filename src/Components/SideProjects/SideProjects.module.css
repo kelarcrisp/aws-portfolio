@@ -8,6 +8,8 @@
   box-sizing: border-box;
 }
 
+
+
 .SideProjectItemLeft{
     height: 420px;
     width: 400px; 
@@ -149,6 +151,40 @@
   border-color: #585B5D;
 }
 
+@media (max-width: 400px){
+  .SideProjectsContainer{
+      column-count: 1;
+      margin-left: 0px;
+      padding-left: 0px;
+  } 
+  .SideProjectItemLeft{
+      position: relative;
+      width:375px;
+      margin-left: 0px;
+      padding-left: 20px;
+      word-wrap: break-word;
+
+  }
+  .SideProjectItemRight{
+     position: relative;
+      width:375px;
+      height: 450px;
+      margin-left: 0px;
+      padding-left: 20px;
+      word-wrap: break-word;
+  }
+  .SideProjectItemLeft p{
+      width: 300px; 
+      margin-left: 40px;
+      text-align: center;
+
+  }
+   .SideProjectItemRight p{
+      width: 300px;
+      margin-left: 40px;
+      text-align:center;
+  }
+}
 
 
 

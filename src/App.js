@@ -6,12 +6,13 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import SideProjects from './Components/SideProjects/SideProjects'
 import About from './Components/About/About';
 import ContactForm from './Components/ContactMe/ContactMeForm';
+import MiniDrawer from './Shared/SideDrawer/SideDrawer';
 const App = () => {
   return (
     <BrowserRouter>
       <>
         <NavHeader />
-
+        <MiniDrawer />
         <Switch>
           <Route path='/' exact component={HomePage} />
           <Route path='/Projects' component={SideProjects} />
