@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import classes from './ContactMeForm.module.css';
 import Button from '@material-ui/core/Button';

@@ -6,10 +6,9 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
-
 import MyTab from '../Tabs/Tab';
 import { useHistory } from "react-router-dom";
-import zIndex from '@material-ui/core/styles/zIndex';
+
 
 const styles = {
 
@@ -25,8 +24,18 @@ const styles = {
     Root: {
         display: 'flex',
         justifyContent: 'space-between',
-        animation: `$root 3s`,
-        width: 'auto'
+        // animation: `$root 3s`,
+        width: "100%",
+        // //this is how you can write media queries with material ui!!
+        '@media (max-width: 400px)': {
+            // width: "60%",
+            display: "none"
+        }
+    },
+    ///side drawer for mobile users
+    SideDrawerNav: {
+        display: 'hidden',
+
     },
     Tabs: {
         marginRight: '20px',
@@ -63,7 +72,9 @@ const styles = {
         }
     },
 
+
 };
+
 
 class NavHeader extends React.Component {
     state = {
@@ -79,7 +90,6 @@ class NavHeader extends React.Component {
     }
     render() {
         const { classes } = this.props;
-
         return (
             <div className={classes.ContainerDiv}>
                 <Paper square elevation={0}

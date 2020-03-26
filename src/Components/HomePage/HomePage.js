@@ -1,6 +1,7 @@
-import React, { useEffect, useState, Component } from 'react';
+import React, { Component } from 'react';
 import classes from './HomePage.module.css';
 import WorkInfoCard from './WorkInfoCard/WorkInfoCard'
+import MiniDrawer from '../../Shared/SideDrawer/SideDrawer';
 class HomePage extends Component {
 
 
@@ -25,6 +26,7 @@ class HomePage extends Component {
 
         return (
             <div>
+                <MiniDrawer />
                 {loadDropDown}
             </div>
         );
