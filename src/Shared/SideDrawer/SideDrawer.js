@@ -166,16 +166,16 @@ export default function MiniDrawer() {
                 </div>
                 <Divider />
                 <List style={{ marginLeft: '10px' }}>
-                    <ListItem button>
-                        <HomeIcon onClick={() => handleHome()} />
+                    <ListItem button onClick={() => handleHome()}>
+                        <HomeIcon />
                         <ListItemText primary='Home' style={{ marginLeft: '35px' }} />
                     </ListItem>
-                    <ListItem button>
-                        <ComputerIcon onClick={() => handleProjects()} />
+                    <ListItem button onClick={() => handleProjects()}>
+                        <ComputerIcon />
                         <ListItemText primary='Projects' style={{ marginLeft: '35px' }} />
                     </ListItem>
-                    <ListItem button>
-                        <EmailIcon onClick={() => handleContact()} />
+                    <ListItem button onClick={() => handleContact()}>
+                        <EmailIcon />
                         <ListItemText primary='Email' style={{ marginLeft: '35px' }} />
                     </ListItem>
                 </List>
