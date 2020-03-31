@@ -9,7 +9,7 @@ const ContactMeForm = () => {
     const [email, setEmail] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
-    const [isSent, setIsSent] = useState(false);
+    const [isSent, setIsSent] = useState();
 
     const handleChange = (e) => {
         e.preventDefault();
@@ -43,6 +43,11 @@ const ContactMeForm = () => {
     let showSentMessage = null;
     if (isSent) {
         showSentMessage = 'Your email has successfully been sent!'
+    }
+    if (isSent) {
+        setTimeout(() => {
+            setIsSent(null)
+        }, 2500)
     }
     return (
         <div className={classes.ContactContainer}>

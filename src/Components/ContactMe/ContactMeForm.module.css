@@ -19,9 +19,6 @@
     height: 70px;
 }
 
-.TextField :invalid{
-   background-color: red;
-}
 
 .ShowSentMessage{
     margin-top: 2%;
