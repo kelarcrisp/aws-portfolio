@@ -24,6 +24,7 @@
     color: #585B5D;
     font-family: 'Raleway', sans-serif;
       position: relative;
+         vertical-align: center;
 }
 /* if I ever want to create some sort of backdrop/overlay to each image do it here
 /* .SideProjectItemLeft:hover{
@@ -51,6 +52,7 @@
         color: #585B5D;
     font-family: 'Raleway', sans-serif;
       position: relative; 
+         vertical-align: center;
 }
 
 .SideProjectItemRight p{
@@ -163,6 +165,7 @@
       margin-left: 0px;
       padding-left: 20px;
       word-wrap: break-word;
+      vertical-align: center;
 
   }
   .SideProjectItemRight{
@@ -172,6 +175,7 @@
       margin-left: 0px;
       padding-left: 20px;
       word-wrap: break-word;
+      vertical-align: center;
   }
   .SideProjectItemLeft p{
       width: 300px; 
