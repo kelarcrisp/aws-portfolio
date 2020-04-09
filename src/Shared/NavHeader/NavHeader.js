@@ -24,7 +24,7 @@ const styles = {
     Root: {
         display: 'flex',
         justifyContent: 'space-between',
-        // animation: `$root 3s`,
+        animation: `$root 3s`,
         width: "100%",
         // //this is how you can write media queries with material ui!!
         '@media (max-width: 400px)': {
