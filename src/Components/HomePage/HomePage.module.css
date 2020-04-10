@@ -2,7 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow-y: auto;
+    overflow: hidden !important;
     background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
     animation: HomePageContainer 3s;
 }
@@ -12,14 +12,14 @@
       position: relative;
     height: 100vh;
     width: 100%;
-  overflow-y: auto;
+    overflow-y: hidden;
     background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
 }
 .DarkHomePageContainer {
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
     background: #333;
     animation: HomePageContainer 3s;
 }
@@ -29,7 +29,7 @@
       position: relative;
     height: 100vh;
     width: 100%;
-  overflow-y: auto;
+  overflow-y: hidden;
    background: #333;
 }
 

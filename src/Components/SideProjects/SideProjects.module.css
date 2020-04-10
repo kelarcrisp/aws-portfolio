@@ -3,20 +3,20 @@
    column-count: 2;
     height: 100%;
     width: 100%;
-  background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
-  padding: 40px;
-  box-sizing: border-box;
+    background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .DarkSideProjectsContainer{
    position: relative;
-   column-count: 2;
+    column-count: 2;
     height: 100%;
     width: 100%;
-  background: #333;
-  color: #ddd;
-  padding: 40px;
-  box-sizing: border-box;
+    background: #333;
+    color: #ddd;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .SideProjectItemLeft{
@@ -25,32 +25,32 @@
     text-align: center;
     box-shadow: 2px 2px 1px #ccc;
     box-sizing: border-box;
-    margin-left: 40%;
+    margin-left: 23%;
     margin-bottom: 50px;
     padding-top: 5px;
     white-space: pre-line;
     vertical-align: center;
     color: #585B5D;
     font-family: 'Raleway', sans-serif;
-      position: relative;
-         vertical-align: center;
+    position: relative;
+    vertical-align: center;
 }
 
 .SideProjectItemRight{
     height: 420px;
     width: 400px; 
     text-align: center;
-     box-shadow: 2px 2px 1px #ccc;
+    box-shadow: 2px 2px 1px #ccc;
     box-sizing: border-box;
     margin-left: 20%;
     margin-top: 50px;
     padding-top: 5px;
     white-space: pre-line;
     vertical-align: center;
-        color: #585B5D;
+    color: #585B5D;
     font-family: 'Raleway', sans-serif;
-      position: relative; 
-         vertical-align: center;
+    position: relative; 
+    vertical-align: center;
 }
 
 .DarkProjectItemLeft{
@@ -59,7 +59,7 @@
     text-align: center;
     box-shadow: 2px 2px 4px #ccc;
     box-sizing: border-box;
-    margin-left: 40%;
+    margin-left: 20%;
     margin-bottom: 50px;
     padding-top: 5px;
     white-space: pre-line;
@@ -67,23 +67,23 @@
     font-family: 'Raleway', sans-serif;
     position: relative;
     vertical-align: center;
-         color: #ddd
+    color: #ddd
 }
 .DarkProjectItemRight{
     height: 420px;
     width: 400px; 
     text-align: center;
-     box-shadow: 2px 2px 4px #ccc;
+    box-shadow: 2px 2px 4px #ccc;
     box-sizing: border-box;
     margin-left: 20%;
     margin-top: 50px;
     padding-top: 5px;
     white-space: pre-line;
     vertical-align: center;
-     color: #ddd;
+    color: #ddd;
     font-family: 'Raleway', sans-serif;
-      position: relative; 
-         vertical-align: center;
+    position: relative; 
+    vertical-align: center;
 }
 /* if I ever want to create some sort of backdrop/overlay to each image do it here
 /* .SideProjectItemLeft:hover{
@@ -92,62 +92,62 @@
 
 .SideProjectItemLeft p,
 .DarkSideProjectItemLeft p{
-   position: absolute;
-   bottom: 0;
-   right: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
 .SideProjectItemRight p{
-   position: absolute;
-   bottom: 0;
-   right: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 
 .SideProjectItemLeft a{
-  color: #585B5D;
-  position: relative;
-  text-decoration: none;
-  transition: color .4s ease-out;
-  font-size: 24px;
+    color: #585B5D;
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+    font-size: 24px;
 }
 
 .DarkProjectItemLeft a{
     color: #ddd;
-  position: relative;
-  text-decoration: none;
-  transition: color .4s ease-out;
-  font-size: 24px;
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+    font-size: 24px;
 }
 
 .SideProjectItemRight a:hover {
-  color: #585B5D;
-  right: 0;
-  text-decoration: none;
+    color: #585B5D;
+    right: 0;
+    text-decoration: none;
 }
 
 .SideProjectItemLeft a:hover:after {
-  border-color: #585B5D;
-  right: 0;
-  bottom: -5px;
+    border-color: #585B5D;
+    right: 0;
+    bottom: -5px;
 }
 
 .SideProjectItemLeft a:after {
-  border-radius: 1em;
-  border-top: .1em solid #585B5D;
-  content: "";
-  position: absolute;
+    border-radius: 1em;
+    border-top: .1em solid #585B5D;
+    content: "";
+    position: absolute;
     right: 100%;
     bottom: .14em;
     left: 0;
-  transition: right .4s cubic-bezier(0,.5,0,1),
-              border-color .4s ease-out;
-}
+    transition: right .4s cubic-bezier(0,.5,0,1),
+                border-color .4s ease-out;
+  }
 
 .SideProjectItemLeft a:hover:after {
-  animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
-  border-color: #585B5D;
+    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+    border-color: #585B5D;
 }
 
 @keyframes anchor-underline {
@@ -168,67 +168,67 @@
 
 
 .SideProjectItemRight a{
-  color: #585B5D;
-  position: relative;
-  text-decoration: none;
-  transition: color .4s ease-out;
-  font-size: 24px;
+    color: #585B5D;
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+    font-size: 24px;
 }
 
 .DarkProjectItemRight a{
     color: #ddd;
-  position: relative;
-  text-decoration: none;
-  transition: color .4s ease-out;
-  font-size: 24px;
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+    font-size: 24px;
 }
 
 .SideProjectItemRight a:hover {
-  color: #585B5D;
-  right: 0;
-  text-decoration: none;
+    color: #585B5D;
+    right: 0;
+    text-decoration: none;
 }
 
 .SideProjectItemRight a:hover:after {
-  border-color: #585B5D;
-  right: 0;
-  bottom: -5px;
+    border-color: #585B5D;
+    right: 0;
+    bottom: -5px;
 }
 
 .SideProjectItemRight a:after {
-  border-radius: 1em;
-  border-top: .1em solid #585B5D;
-  content: "";
-  position: absolute;
+    border-radius: 1em;
+    border-top: .1em solid #585B5D;
+    content: "";
+    position: absolute;
     right: 100%;
     bottom: .14em;
     left: 0;
-  transition: right .4s cubic-bezier(0,.5,0,1),
-              border-color .4s ease-out;
+    transition: right .4s cubic-bezier(0,.5,0,1),
+                border-color .4s ease-out;
 }
 
 .SideProjectItemRight a:hover:after {
-  animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
-  border-color: #585B5D;
+    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+    border-color: #585B5D;
 }
 
-@media (max-width: 400px){
+@media (max-width: 700px){
   .SideProjectsContainer{
-      column-count: 1;
-      margin-left: 0px;
-      padding-left: 0px;
+    column-count: 1;
+    margin-left: 0px;
+    padding-left: 0px;
   } 
   .SideProjectItemLeft{
-      position: relative;
-      width:375px;
-      margin-left: 0px;
-      padding-left: 20px;
-      word-wrap: break-word;
-      vertical-align: center;
+    position: relative;
+    width:375px;
+    margin-left: 0px;
+    padding-left: 20px;
+    word-wrap: break-word;
+    vertical-align: center;
 
   }
   .SideProjectItemRight{
-     position: relative;
+      position: relative;
       width:375px;
       height: 450px;
       margin-left: 0px;

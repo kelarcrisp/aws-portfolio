@@ -40,7 +40,7 @@ const styles = {
 
     },
     Tabs: {
-        marginRight: '20px',
+        marginRight: '3%',
         marginTop: '10px'
     },
     Links: {
@@ -48,11 +48,12 @@ const styles = {
         height: '100px',
         width: 'auto',
         display: 'flex',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        marginTop: '10px'
 
     },
     DarkLink: {
-        color: '#ddd'
+        color: '#ddd',
     },
     Name: {
         marginTop: '40px',
@@ -63,6 +64,8 @@ const styles = {
         fontSize: '50px',
         cursor: 'pointer'
     },
+
+
     TextColor: {
         color: 'black'
     },
@@ -139,10 +142,10 @@ class NavHeader extends React.Component {
                                     < TwitterIcon />
                                 </IconButton>
                             </div>
-                            <FormControlLabel onClick={() => setThemeColor(latestColor => !latestColor)} control={<Switch style={{ color: 'white', }} />} label="Theme" />
+                            <FormControlLabel style={{ marginTop: '10px' }} onClick={() => setThemeColor(latestColor => !latestColor)} control={<Switch style={{ color: 'white', font: '50px' }} />} label="☾" />
                             <div
 
-                                className={classes.Name}>Kelar Crisp</div>
+                                className={classes.Name}></div>
                             <div className={classes.Tabs}>
 
                                 <MyTab

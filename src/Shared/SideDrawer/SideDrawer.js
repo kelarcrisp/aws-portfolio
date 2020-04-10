@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
@@ -26,7 +25,7 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         padding: '0',
         display: 'none',
-        background: 'green',
+
         '@media (max-width: 400px)': {
             // width: "60%",
             display: "block"
@@ -139,13 +138,13 @@ const useStyles = makeStyles(theme => ({
 
 const MiniDrawer = () => {
 
-    const { themeColor, setThemeColor } = useContext(ThemeContext)
+    const { themeColor } = useContext(ThemeContext)
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
-    const handleDrawerOpen = () => {
-        setOpen(!open);
-    };
+    // const handleDrawerOpen = () => {
+    //     setOpen(!open);
+    // };
 
     const handleDrawerClose = () => {
         setOpen(!open);
@@ -196,7 +195,7 @@ const MiniDrawer = () => {
             >
                 <div className={classes.toolbar}>
                     <IconButton onClick={handleDrawerClose}>
-                        {theme.direction != 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+                        {theme.direction !== 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
                     </IconButton>
                 </div>
                 <Divider />

@@ -4,7 +4,7 @@ import { ThemeContext } from '../../../Shared/contexts/ThemeContext';
 
 const WorkInfoCard = props => {
 
-    const { themeColor, setThemeColor } = useContext(ThemeContext)
+    const { themeColor } = useContext(ThemeContext)
     return (
         <div>
             <h3 className={classes.HeaderText}>Kelar Crisp </h3>

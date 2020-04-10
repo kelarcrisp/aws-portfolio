@@ -10,7 +10,7 @@ import { ThemeContext } from '../../Shared/contexts/ThemeContext';
 
 const ContactMeForm = (props) => {
 
-    const { themeColor, setThemeColor } = useContext(ThemeContext)
+    const { themeColor } = useContext(ThemeContext)
     const [email, setEmail] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
@@ -54,8 +54,6 @@ const ContactMeForm = (props) => {
             setIsSent(null)
         }, 2500)
     }
-
-    const materialTheme = themeColor ? { color: 'green' } : { color: 'yellow' }
 
     return (
         <div className={themeColor ? classes.DarkContactContainer : classes.ContactContainer} >

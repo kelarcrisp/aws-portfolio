@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classes from './HomePage.module.css';
 import WorkInfoCard from './WorkInfoCard/WorkInfoCard'
-import MiniDrawer from '../../Shared/SideDrawer/SideDrawer';
 import { ThemeContext } from '../../Shared/contexts/ThemeContext';
 class HomePage extends Component {
 
