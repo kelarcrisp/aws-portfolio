@@ -9,6 +9,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import MyTab from '../Tabs/Tab';
 import { useHistory } from "react-router-dom";
 import { ThemeContext } from '../contexts/ThemeContext';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Switch from '@material-ui/core/Switch';
 
 const styles = {
 
@@ -94,9 +96,9 @@ class NavHeader extends React.Component {
 
         return (
             <ThemeContext.Consumer>{(context) => {
-                const { isLightTheme, dark } = context
+                const { themeColor, setThemeColor } = context
                 let colorTheme;
-                if (!isLightTheme) {
+                if (themeColor) {
                     colorTheme = {
                         background: '#333', color: '#ddd',
                     }
@@ -132,9 +134,12 @@ class NavHeader extends React.Component {
                                     < TwitterIcon />
                                 </IconButton>
                             </div>
+                            <FormControlLabel onClick={() => setThemeColor(latestColor => !latestColor)} control={<Switch style={{ color: 'white', }} />} label="Theme" />
                             <div
+
                                 className={classes.Name}>Kelar Crisp</div>
                             <div className={classes.Tabs}>
+
                                 <MyTab
                                     onChange={this.handleChange}
                                     className={classes.Tabs}

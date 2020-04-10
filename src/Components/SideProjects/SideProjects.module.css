@@ -8,7 +8,16 @@
   box-sizing: border-box;
 }
 
-
+.DarkSideProjectsContainer{
+   position: relative;
+   column-count: 2;
+    height: 100%;
+    width: 100%;
+  background: #333;
+  color: #ddd;
+  padding: 40px;
+  box-sizing: border-box;
+}
 
 .SideProjectItemLeft{
     height: 420px;
@@ -26,17 +35,6 @@
       position: relative;
          vertical-align: center;
 }
-/* if I ever want to create some sort of backdrop/overlay to each image do it here
-/* .SideProjectItemLeft:hover{
-
-} */
-
-.SideProjectItemLeft p{
-   position: absolute;
-   bottom: 0;
-   right: 0;
-}
-
 
 .SideProjectItemRight{
     height: 420px;
@@ -55,6 +53,51 @@
          vertical-align: center;
 }
 
+.DarkProjectItemLeft{
+    height: 420px;
+    width: 400px; 
+    text-align: center;
+    box-shadow: 2px 2px 1px #ccc;
+    box-sizing: border-box;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    white-space: pre-line;
+    vertical-align: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    vertical-align: center;
+         color: #ddd
+}
+.DarkProjectItemRight{
+    height: 420px;
+    width: 400px; 
+    text-align: center;
+     box-shadow: 2px 2px 1px #ccc;
+    box-sizing: border-box;
+    margin-left: 20%;
+    margin-top: 50px;
+    padding-top: 5px;
+    white-space: pre-line;
+    vertical-align: center;
+     color: #ddd;
+    font-family: 'Raleway', sans-serif;
+      position: relative; 
+         vertical-align: center;
+}
+/* if I ever want to create some sort of backdrop/overlay to each image do it here
+/* .SideProjectItemLeft:hover{
+
+} */
+
+.SideProjectItemLeft p,
+.DarkSideProjectItemLeft p{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+
 .SideProjectItemRight p{
    position: absolute;
    bottom: 0;
@@ -64,6 +107,14 @@
 
 .SideProjectItemLeft a{
   color: #585B5D;
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out;
+  font-size: 24px;
+}
+
+.DarkProjectItemLeft a{
+    color: #ddd;
   position: relative;
   text-decoration: none;
   transition: color .4s ease-out;
@@ -118,6 +169,14 @@
 
 .SideProjectItemRight a{
   color: #585B5D;
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out;
+  font-size: 24px;
+}
+
+.DarkProjectItemRight a{
+    color: #ddd;
   position: relative;
   text-decoration: none;
   transition: color .4s ease-out;

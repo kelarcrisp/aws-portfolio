@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './HomePage.module.css';
 import WorkInfoCard from './WorkInfoCard/WorkInfoCard'
 import MiniDrawer from '../../Shared/SideDrawer/SideDrawer';
+import { ThemeContext } from '../../Shared/contexts/ThemeContext';
 class HomePage extends Component {
 
 
@@ -19,18 +20,31 @@ class HomePage extends Component {
 
 
     render() {
-        let loadDropDown;
-        if (!localStorage.getItem('showDropDown'))
-            loadDropDown = <div className={classes.HomePageContainer}> <WorkInfoCard /></div>
-        else
-            loadDropDown = <div className={classes.HomePageContainerTwo}> <WorkInfoCard /> </div>
 
         return (
-            <div>
+            <ThemeContext.Consumer>{(context) => {
+                const { themeColor } = context
 
-                {loadDropDown}
-            </div>
-        );
+
+                let loadDropDown;
+                if (!localStorage.getItem('showDropDown') && themeColor)
+                    loadDropDown = <div className={classes.DarkHomePageContainer}> <WorkInfoCard /></div>
+
+                if (!localStorage.getItem('showDropDown') && !themeColor)
+                    loadDropDown = <div className={classes.HomePageContainer}> <WorkInfoCard /> </div>
+
+                if (localStorage.getItem('showDropDown') && themeColor) {
+                    loadDropDown = <div className={classes.DarkHomePageContainerTwo}> <WorkInfoCard /> </div>
+                }
+                else
+                    loadDropDown = <div className={classes.HomePageContainerTwo}> <WorkInfoCard /> </div>
+                return (
+                    <div>
+                        {loadDropDown}
+                    </div>
+                )
+            }}</ThemeContext.Consumer>
+        )
     }
 
 

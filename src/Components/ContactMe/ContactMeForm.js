@@ -1,11 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import TextField from '@material-ui/core/TextField';
 import classes from './ContactMeForm.module.css';
 import Button from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
 import axios from 'axios';
-const ContactMeForm = () => {
+import { ThemeContext } from '../../Shared/contexts/ThemeContext';
 
+
+
+const ContactMeForm = (props) => {
+
+    const { themeColor, setThemeColor } = useContext(ThemeContext)
     const [email, setEmail] = useState('');
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
@@ -49,19 +54,46 @@ const ContactMeForm = () => {
             setIsSent(null)
         }, 2500)
     }
+
+    const materialTheme = themeColor ? { color: 'green' } : { color: 'yellow' }
+
     return (
-        <div className={classes.ContactContainer}>
+        <div className={themeColor ? classes.DarkContactContainer : classes.ContactContainer} >
             <h3 className={classes.ContactHeader}>Fill out the form to directly contact me by Email!</h3>
             <form
                 onSubmit={handleSubmit}
                 className={classes.FormInfoContainer} autoComplete="on">
-                <TextField className={classes.TextField} type='email' id="email" label="Your Email " variant="outlined" value={email} onChange={handleChange} />
-                <TextField className={classes.TextField} id="title" label="Title" variant="outlined" value={title} onChange={handleChange} />`
+                <TextField className={classes.TextField}
+                    InputProps={themeColor ? {
+                        style: {
+                            color: "#ddd",
+                        }
+                    } : null}
+                    type='email' id="email" label="Your Email " variant="outlined" value={email} onChange={handleChange} />
+                <TextField className={classes.TextField}
+                    InputProps={themeColor ? {
+                        style: {
+                            color: "#ddd",
+                        }
+                    } : null}
+                    id="title" label="Title" variant="outlined" value={title} onChange={handleChange} />`
                     <TextField
                     className={classes.TextField}
+                    InputProps={themeColor ? {
+                        style: {
+                            color: "#ddd",
+                        }
+                    } : null}
                     onChange={handleChange}
                     multiline
                     rows='4'
+
+                    InputProps={{
+                        style: {
+                            color: "#ddd",
+                        }
+                    }}
+
                     id="message" label="Message" variant="outlined" value={message} />
                 <Button
                     onClick={handleSubmit}
@@ -72,7 +104,7 @@ const ContactMeForm = () => {
                 >
                     Send!
                     </Button>
-                <div className={classes.ShowSentMessage}>{showSentMessage}</div>
+                <div className={!themeColor ? classes.ShowSentMessage : classes.ShowDarkSentMessage}>{showSentMessage}</div>
             </form>
         </div >
     );

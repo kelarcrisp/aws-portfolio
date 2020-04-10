@@ -72,7 +72,7 @@ const useStyles = makeStyles(theme => ({
         width: '155px',
         fontFamily: 'Raleway, sans-serif',
         background: 'black',
-        color: 'white',
+        color: '#ddd',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.enteringScreen,
@@ -92,7 +92,7 @@ const useStyles = makeStyles(theme => ({
     },
     drawerCloseDark: {
         background: 'black',
-        color: 'white',
+        color: '#ddd',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
