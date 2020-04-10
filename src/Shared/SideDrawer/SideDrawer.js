@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -18,7 +18,7 @@ import ComputerIcon from '@material-ui/icons/Computer';
 import EmailIcon from '@material-ui/icons/Email';
 import HomeIcon from '@material-ui/icons/Home';
 import { useHistory } from "react-router-dom";
-
+import { ThemeContext } from '../contexts/ThemeContext';
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -68,8 +68,31 @@ const useStyles = makeStyles(theme => ({
             duration: theme.transitions.duration.enteringScreen,
         }),
     },
+    drawerOpenDark: {
+        width: '155px',
+        fontFamily: 'Raleway, sans-serif',
+        background: 'black',
+        color: 'white',
+        transition: theme.transitions.create('width', {
+            easing: theme.transitions.easing.sharp,
+            duration: theme.transitions.duration.enteringScreen,
+        }),
+    },
     drawerClose: {
         background: 'linear-gradient(90deg, #fdfcfb,  #e2d1c3);',
+        transition: theme.transitions.create('width', {
+            easing: theme.transitions.easing.sharp,
+            duration: theme.transitions.duration.leavingScreen,
+        }),
+        overflowX: 'hidden',
+        width: theme.spacing(7) + 1,
+        [theme.breakpoints.up('sm')]: {
+            width: theme.spacing(9) + 1,
+        },
+    },
+    drawerCloseDark: {
+        background: 'black',
+        color: 'white',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -107,14 +130,19 @@ const useStyles = makeStyles(theme => ({
     paper: {
         background: 'linear - gradient(90deg, #fdfcfb, #e2d1c3',
         color: 'black'
+    },
+    darkPaper: {
+        background: 'black',
+        color: 'white'
     }
 }));
 
-export default function MiniDrawer() {
+const MiniDrawer = () => {
+
+    const { themeColor, setThemeColor } = useContext(ThemeContext)
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
-
     const handleDrawerOpen = () => {
         setOpen(!open);
     };
@@ -140,24 +168,31 @@ export default function MiniDrawer() {
     }
     function handleHome() {
         history.push('/')
+
     }
 
+
+    console.log(themeColor, 'themecolor in sidedrawer')
     return (
-        <div className={classes.root}>
-            {/* <CssBaseline /> */}
+        <div className={classes.root} >
             <Drawer
                 variant="permanent"
-                className={clsx(classes.drawer, {
-                    [classes.drawerOpen]: open,
-                    [classes.drawerClose]: !open,
-                })}
+                // className={clsx(classes.drawer, {
+                //     [classes.drawerOpen]: open,
+                //     [classes.drawerClose]: !open,
+                // })}
                 classes={{
                     paper: clsx({
-                        [classes.drawerOpen]: open,
-                        [classes.drawerClose]: !open,
-                        [classes.paper]: open || !open,
+                        [classes.drawerOpen]: open && !themeColor,
+                        [classes.drawerClose]: !open && !themeColor,
+                        [classes.drawerOpenDark]: open && themeColor,
+                        [classes.drawerCloseDark]: !open && themeColor,
                     }),
                 }}
+
+
+
+
             >
                 <div className={classes.toolbar}>
                     <IconButton onClick={handleDrawerClose}>
@@ -198,6 +233,7 @@ export default function MiniDrawer() {
                 </div>
             </Drawer>
         </div>
-    );
+    )
 }
 
+export default MiniDrawer

@@ -8,7 +8,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import MyTab from '../Tabs/Tab';
 import { useHistory } from "react-router-dom";
-
+import { ThemeContext } from '../contexts/ThemeContext';
 
 const styles = {
 
@@ -77,6 +77,7 @@ const styles = {
 
 
 class NavHeader extends React.Component {
+
     state = {
         value: 0,
     };
@@ -90,47 +91,62 @@ class NavHeader extends React.Component {
     }
     render() {
         const { classes } = this.props;
+
         return (
-            <div className={classes.ContainerDiv}>
-                <Paper square elevation={0}
-                    style={{ background: 'linear-gradient(90deg, #fdfcfb ,  #e2d1c3' }}
-                    className={classes.Root}>
-                    <div className={classes.Links}>
-                        <IconButton
-                            onClick={() => window.location.href = 'https://github.com/epicoding95'}
+            <ThemeContext.Consumer>{(context) => {
+                const { isLightTheme, dark } = context
+                let colorTheme;
+                if (!isLightTheme) {
+                    colorTheme = {
+                        background: '#333', color: '#ddd',
+                    }
+                } else {
+                    colorTheme = { background: 'linear-gradient(90deg, #fdfcfb ,  #e2d1c3' }
+                }
+                return (
+                    <div className={classes.ContainerDiv} >
+                        <Paper square elevation={0}
+                            style={colorTheme}
+                            className={classes.Root}>
+                            <div className={classes.Links}>
+                                <IconButton
+                                    onClick={() => window.location.href = 'https://github.com/epicoding95'}
 
-                            aria-label="GitHubIcon">
-                            <GitHubIcon />
-                        </IconButton>
-                        <IconButton
-                            onClick={() => window.location.href = 'https://www.linkedin.com/in/kelarcrisp/'}
-                            aria-label="LinkedInIcon">
-                            < LinkedInIcon />
-                        </IconButton>
-                        <IconButton
+                                    aria-label="GitHubIcon">
+                                    <GitHubIcon />
+                                </IconButton>
+                                <IconButton
+                                    onClick={() => window.location.href = 'https://www.linkedin.com/in/kelarcrisp/'}
+                                    aria-label="LinkedInIcon">
+                                    < LinkedInIcon />
+                                </IconButton>
+                                <IconButton
 
-                            onClick={() => window.location.href = 'https://www.instagram.com/theekilla/'}
-                            aria-label="InstagramIcon">
-                            < InstagramIcon />
-                        </IconButton>
-                        <IconButton
-                            onClick={() => window.location.href = 'https:twitter.com/theekillaa'}
-                            aria-label="TwitterIcon">
-                            < TwitterIcon />
-                        </IconButton>
+                                    onClick={() => window.location.href = 'https://www.instagram.com/theekilla/'}
+                                    aria-label="InstagramIcon">
+                                    < InstagramIcon />
+                                </IconButton>
+                                <IconButton
+                                    onClick={() => window.location.href = 'https:twitter.com/theekillaa'}
+                                    aria-label="TwitterIcon">
+                                    < TwitterIcon />
+                                </IconButton>
+                            </div>
+                            <div
+                                className={classes.Name}>Kelar Crisp</div>
+                            <div className={classes.Tabs}>
+                                <MyTab
+                                    onChange={this.handleChange}
+                                    className={classes.Tabs}
+                                    value={this.state.value}
+
+                                />
+                            </div>
+                        </Paper>
                     </div>
-                    <div
-                        className={classes.Name}>Kelar Crisp</div>
-                    <div className={classes.Tabs}>
-                        <MyTab
-                            onChange={this.handleChange}
-                            className={classes.Tabs}
-                            value={this.state.value}
+                )
+            }}</ThemeContext.Consumer>
 
-                        />
-                    </div>
-                </Paper>
-            </div>
         );
     }
 }
