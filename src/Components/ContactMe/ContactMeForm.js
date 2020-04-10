@@ -69,9 +69,19 @@ const ContactMeForm = (props) => {
                             color: "#ddd",
                         }
                     } : null}
+                    InputLabelProps={themeColor ? {
+                        style: {
+                            color: "#ddd",
+                        }
+                    } : null}
                     type='email' id="email" label="Your Email " variant="outlined" value={email} onChange={handleChange} />
                 <TextField className={classes.TextField}
                     InputProps={themeColor ? {
+                        style: {
+                            color: "#ddd",
+                        }
+                    } : null}
+                    InputLabelProps={themeColor ? {
                         style: {
                             color: "#ddd",
                         }
@@ -94,12 +104,17 @@ const ContactMeForm = (props) => {
                         }
                     }}
 
-                    id="message" label="Message" variant="outlined" value={message} />
+                    InputLabelProps={themeColor ? {
+                        style: {
+                            color: "#ddd",
+                        }
+                    } : null}
+                    id="message" label='Message' variant="outlined" value={message} />
                 <Button
                     onClick={handleSubmit}
                     variant="contained"
                     color="primary"
-                    style={{ marginTop: '50px' }}
+                    style={{ marginTop: '50px', marginLeft: '-10px' }}
                     startIcon={<SendIcon></SendIcon>}
                 >
                     Send!
