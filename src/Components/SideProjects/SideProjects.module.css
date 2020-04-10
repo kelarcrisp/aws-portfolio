@@ -57,7 +57,7 @@
     height: 420px;
     width: 400px; 
     text-align: center;
-    box-shadow: 2px 2px 1px #ccc;
+    box-shadow: 2px 2px 4px #ccc;
     box-sizing: border-box;
     margin-left: 40%;
     margin-bottom: 50px;
@@ -73,7 +73,7 @@
     height: 420px;
     width: 400px; 
     text-align: center;
-     box-shadow: 2px 2px 1px #ccc;
+     box-shadow: 2px 2px 4px #ccc;
     box-sizing: border-box;
     margin-left: 20%;
     margin-top: 50px;

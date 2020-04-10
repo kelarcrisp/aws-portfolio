@@ -2,7 +2,7 @@
     margin: 40px auto;
     width: 25%;
     text-align: center;
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 4px #ccc;
     padding: 10px;
     box-sizing: border-box; 
     font-family: 'Raleway', sans-serif;
@@ -12,7 +12,7 @@
     margin: 40px auto;
     width: 25%;
     text-align: center;
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 8px #ccc;
     padding: 10px;
     box-sizing: border-box; 
     font-family: 'Raleway', sans-serif;

@@ -51,9 +51,12 @@ const styles = {
         flexWrap: 'wrap'
 
     },
+    DarkLink: {
+        color: '#ddd'
+    },
     Name: {
         marginTop: '40px',
-        paddingLeft: '15%',
+        paddingLeft: '0px',
         fontSize: '35px'
     },
     NameHover: {
@@ -110,26 +113,28 @@ class NavHeader extends React.Component {
                         <Paper square elevation={0}
                             style={colorTheme}
                             className={classes.Root}>
-                            <div className={classes.Links}>
+                            <div className={classes.Links} >
                                 <IconButton
                                     onClick={() => window.location.href = 'https://github.com/epicoding95'}
-
+                                    className={themeColor ? classes.DarkLink : null}
                                     aria-label="GitHubIcon">
                                     <GitHubIcon />
                                 </IconButton>
                                 <IconButton
                                     onClick={() => window.location.href = 'https://www.linkedin.com/in/kelarcrisp/'}
+                                    className={themeColor ? classes.DarkLink : null}
                                     aria-label="LinkedInIcon">
                                     < LinkedInIcon />
                                 </IconButton>
                                 <IconButton
-
                                     onClick={() => window.location.href = 'https://www.instagram.com/theekilla/'}
+                                    className={themeColor ? classes.DarkLink : null}
                                     aria-label="InstagramIcon">
                                     < InstagramIcon />
                                 </IconButton>
                                 <IconButton
                                     onClick={() => window.location.href = 'https:twitter.com/theekillaa'}
+                                    className={themeColor ? classes.DarkLink : null}
                                     aria-label="TwitterIcon">
                                     < TwitterIcon />
                                 </IconButton>
@@ -141,6 +146,7 @@ class NavHeader extends React.Component {
                             <div className={classes.Tabs}>
 
                                 <MyTab
+                                    context={themeColor}
                                     onChange={this.handleChange}
                                     className={classes.Tabs}
                                     value={this.state.value}

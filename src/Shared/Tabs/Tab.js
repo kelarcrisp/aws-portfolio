@@ -25,23 +25,24 @@ const MyTab = (props) => {
         history.push('/')
     }
     return (
-
         <Tabs
             className={props.className}
             value={props.value}
             onChange={props.onChange}
-            TabIndicatorProps={{ style: { background: 'black' } }}>
+            TabIndicatorProps=
+            {props.context ? { style: { background: '#ddd' } }
+                : { style: { background: 'black' } }}
+        >
 
-            >
-    
-    
+
+
             <Tab onClick={() => handleHome()} icon={<HomeIcon />} label="Home" />
             <Tab onClick={() => handleProjects()} icon={<ComputerIcon />} label="Projects" />
             {/* <Tab onClick={() => handleAbout()} icon={<InfoIcon />} label="About" /> */}
             <Tab
                 onClick={() => handleContact()} icon={<EmailIcon />} label="Email" />
 
-        </Tabs>
+        </Tabs >
 
     );
 };
