@@ -2,7 +2,7 @@
    position: relative;
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
+     background: linear-gradient( #fdfbfb,  #ebedee);
     padding: 40px;
     box-sizing: border-box;
     animation: HomePageContainer 3s;
@@ -13,7 +13,7 @@
     position: relative;
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
+    background: linear-gradient(90deg, #fdfbfb,  #ebedee);
     padding: 40px;
     box-sizing: border-box;
 }
@@ -39,13 +39,13 @@
 
 @keyframes HomePageContainer{
 from {
-  background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
+   background: linear-gradient( #fdfbfb,  #ebedee);
   opacity: 0;
   transform: translateY(-200%)
 }
 
 to {
-    background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
+     background: linear-gradient( #fdfbfb,  #ebedee);
   opacity: 1;
    transform: translateY(0)
 }

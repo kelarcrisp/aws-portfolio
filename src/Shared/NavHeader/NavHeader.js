@@ -109,7 +109,7 @@ class NavHeader extends React.Component {
                         background: '#333', color: '#ddd',
                     }
                 } else {
-                    colorTheme = { background: 'linear-gradient(90deg, #fdfcfb ,  #e2d1c3' }
+                    colorTheme = { background: 'linear-gradient( 90deg,#fdfbfb, #ebedee' }
                 }
                 return (
                     <div className={classes.ContainerDiv} >

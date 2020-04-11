@@ -61,7 +61,7 @@ const useStyles = makeStyles(theme => ({
     drawerOpen: {
         width: '155px',
         fontFamily: 'Raleway, sans-serif',
-        background: 'linear-gradient(90deg, #fdfcfb,  #e2d1c3);',
+        background: 'linear-gradient(90deg, #fdfbfb,  #ebedee);',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.enteringScreen,
@@ -78,7 +78,7 @@ const useStyles = makeStyles(theme => ({
         }),
     },
     drawerClose: {
-        background: 'linear-gradient(90deg, #fdfcfb,  #e2d1c3);',
+        background: 'linear-gradient(90deg, #fdfbfb,  #ebedee);',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
@@ -127,7 +127,7 @@ const useStyles = makeStyles(theme => ({
         marginLeft: '10px'
     },
     paper: {
-        background: 'linear - gradient(90deg, #fdfcfb, #e2d1c3',
+        background: 'linear-gradient(90deg, #fdfbfb,  #ebedee);',
         color: 'black'
     },
     darkPaper: {
