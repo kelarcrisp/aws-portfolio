@@ -10,7 +10,6 @@ const MyTab = (props) => {
     const history = useHistory();
 
     function handleProjects() {
-
         history.push("/Projects");
     }
     // function handleAbout() {
@@ -33,15 +32,11 @@ const MyTab = (props) => {
             {props.context ? { style: { background: '#ddd' } }
                 : { style: { background: 'black' } }}
         >
-
-
-
             <Tab onClick={() => handleHome()} icon={<HomeIcon />} label="Home" />
             <Tab onClick={() => handleProjects()} icon={<ComputerIcon />} label="Projects" />
             {/* <Tab onClick={() => handleAbout()} icon={<InfoIcon />} label="About" /> */}
             <Tab
                 onClick={() => handleContact()} icon={<EmailIcon />} label="Email" />
-
         </Tabs >
 
     );

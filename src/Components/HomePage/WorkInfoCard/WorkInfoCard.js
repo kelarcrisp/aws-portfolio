@@ -1,9 +1,7 @@
 import React, { useContext } from 'react';
 import classes from './WorkInfoCard.module.css';
 import { ThemeContext } from '../../../Shared/contexts/ThemeContext';
-
 const WorkInfoCard = props => {
-
     const { themeColor } = useContext(ThemeContext)
     return (
         <div>
@@ -29,8 +27,6 @@ const WorkInfoCard = props => {
                 <p> I started work at UPS as a package handler and quickly became a manager leading 8-10 people on a daily basis.
                     Most of my day would consist of delegating work to each of my employees to get that days tasks done in an safe and efficient manner.</p>
             </div>
-
-
         </div>
     );
 };

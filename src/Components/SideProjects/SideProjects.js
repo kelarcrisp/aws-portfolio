@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import classes from './SideProjects.module.css';
 import { ThemeContext } from '../../Shared/contexts/ThemeContext';;
-
 const SideProjects = () => {
     const { themeColor } = useContext(ThemeContext)
     return (
@@ -11,7 +10,6 @@ const SideProjects = () => {
                 <img src={require('../../assets/images/newimage.png')} alt='codeimage' /> <p>
                     -WIP-
                       Spotify Clone came from an idea in using spotify all the time. I wanted to create a spotify website that is exactly how I'd like to have access to my top artists, playlists, etc.</p></div>
-
             <div className={themeColor ? classes.DarkProjectItemLeft : classes.SideProjectItemLeft}> <a href='https://github.com/epicoding95/burger-builder'>Burger Builder </a><img src={require('../../assets/images/newimage.png')} alt='codeimage' /> <p> Burger Builder has been used as a practice project in which i've used to learn/test different ideas between React/Redux/Firebase.</p></div>
             <div className={themeColor ? classes.DarkProjectItemLeft : classes.SideProjectItemLeft}> <a href='https://github.com/epicoding95/chat-room'>Chat Room</a><img src={require('../../assets/images/newimage.png')} alt='codeimage' /> <p> Application in which you can log in and immediately join the greatest conversation on earth. Built with React/Node.js/Socket.io/Material-UI</p></div>
 

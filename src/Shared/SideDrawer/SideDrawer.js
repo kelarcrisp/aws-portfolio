@@ -137,7 +137,6 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const MiniDrawer = () => {
-
     const { themeColor } = useContext(ThemeContext)
     const classes = useStyles();
     const theme = useTheme();
@@ -169,8 +168,6 @@ const MiniDrawer = () => {
         history.push('/')
 
     }
-
-
     console.log(themeColor, 'themecolor in sidedrawer')
     return (
         <div className={classes.root} >
@@ -188,10 +185,6 @@ const MiniDrawer = () => {
                         [classes.drawerCloseDark]: !open && themeColor,
                     }),
                 }}
-
-
-
-
             >
                 <div className={classes.toolbar}>
                     <IconButton onClick={handleDrawerClose}>

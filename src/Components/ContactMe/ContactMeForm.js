@@ -5,9 +5,6 @@ import Button from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
 import axios from 'axios';
 import { ThemeContext } from '../../Shared/contexts/ThemeContext';
-
-
-
 const ContactMeForm = (props) => {
 
     const { themeColor } = useContext(ThemeContext)

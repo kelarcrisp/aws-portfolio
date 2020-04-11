@@ -1,36 +1,40 @@
 .HomePageContainer{
-    position: relative;
-    height: 100vh;
+   position: relative;
+    height: 100%;
     width: 100%;
-    overflow: hidden !important;
     background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
+    padding: 40px;
+    box-sizing: border-box;
     animation: HomePageContainer 3s;
 }
 
 
 .HomePageContainerTwo{
-      position: relative;
-    height: 100vh;
+    position: relative;
+    height: 100%;
     width: 100%;
-    overflow-y: hidden;
     background: linear-gradient(90deg, #fdfcfb,  #e2d1c3);
+    padding: 40px;
+    box-sizing: border-box;
 }
 .DarkHomePageContainer {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    overflow-y: hidden;
     background: #333;
+    padding: 40px;
+    box-sizing: border-box;
     animation: HomePageContainer 3s;
 }
 
 
 .DarkHomePageContainerTwo{
-      position: relative;
-    height: 100vh;
+  position: relative;
+    height: 100%;
     width: 100%;
-  overflow-y: hidden;
-   background: #333;
+    background: #333;
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 @keyframes HomePageContainer{

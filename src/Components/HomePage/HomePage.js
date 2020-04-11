@@ -3,8 +3,6 @@ import classes from './HomePage.module.css';
 import WorkInfoCard from './WorkInfoCard/WorkInfoCard'
 import { ThemeContext } from '../../Shared/contexts/ThemeContext';
 class HomePage extends Component {
-
-
     state = {
         showDropDown: false
     }
@@ -16,15 +14,10 @@ class HomePage extends Component {
             }
         }, 4000)
     }
-
-
     render() {
-
         return (
             <ThemeContext.Consumer>{(context) => {
                 const { themeColor } = context
-
-
                 let loadDropDown;
                 if (!localStorage.getItem('showDropDown') && themeColor)
                     loadDropDown = <div className={classes.DarkHomePageContainer}> <WorkInfoCard /></div>
