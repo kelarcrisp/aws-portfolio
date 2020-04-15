@@ -10,7 +10,7 @@
 
 .DarkSideProjectsContainer{
    position: relative;
-    column-count: 2;
+   column-count: 2;
     height: 100%;
     width: 100%;
     background: #333;
@@ -34,6 +34,7 @@
     font-family: 'Raleway', sans-serif;
     position: relative;
     vertical-align: center;
+    box-sizing: border-box;
 }
 
 .SideProjectItemRight{
@@ -44,46 +45,40 @@
     box-sizing: border-box;
     margin-left: 20%;
     margin-top: 50px;
-    padding-top: 5px;
     white-space: pre-line;
     vertical-align: center;
     color: #585B5D;
     font-family: 'Raleway', sans-serif;
     position: relative; 
-    vertical-align: center;
 }
 
 .DarkProjectItemLeft{
     height: 420px;
     width: 400px; 
     text-align: center;
-    box-shadow: 2px 2px 4px #ccc;
+    box-shadow: 0px 0px 4px #ccc;
     box-sizing: border-box;
     margin-left: 20%;
     margin-bottom: 50px;
-    padding-top: 5px;
-    white-space: pre-line;
-    vertical-align: center;
     font-family: 'Raleway', sans-serif;
     position: relative;
-    vertical-align: center;
-    color: #ddd
+    color: #ddd;
+    vertical-align:center;
+    border: 2px solid black;
 }
 .DarkProjectItemRight{
     height: 420px;
     width: 400px; 
     text-align: center;
-    box-shadow: 2px 2px 4px #ccc;
+    box-shadow: 0px 0px 4px #ccc;
     box-sizing: border-box;
     margin-left: 20%;
-    margin-top: 50px;
-    padding-top: 5px;
-    white-space: pre-line;
-    vertical-align: center;
+    margin-bottom: 50px;
     color: #ddd;
     font-family: 'Raleway', sans-serif;
     position: relative; 
-    vertical-align: center;
+  border: 1px solid black;
+
 }
 /* if I ever want to create some sort of backdrop/overlay to each image do it here
 /* .SideProjectItemLeft:hover{

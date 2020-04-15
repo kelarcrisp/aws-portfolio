@@ -145,7 +145,7 @@ class NavHeader extends React.Component {
                             <FormControlLabel style={{ marginTop: '10px' }} onClick={() => setThemeColor(latestColor => !latestColor)} control={<Switch style={{ color: 'white', font: '50px' }} />} label="☾" />
                             <div
 
-                                className={classes.Name}></div>
+                                className={classes.Name}>Kelar Crisp</div>
                             <div className={classes.Tabs}>
 
                                 <MyTab
