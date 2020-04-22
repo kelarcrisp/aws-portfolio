@@ -64,7 +64,6 @@
     position: relative;
     color: #ddd;
     vertical-align:center;
-    border: 2px solid black;
 }
 .DarkProjectItemRight{
     height: 420px;
@@ -77,7 +76,6 @@
     color: #ddd;
     font-family: 'Raleway', sans-serif;
     position: relative; 
-  border: 1px solid black;
 
 }
 /* if I ever want to create some sort of backdrop/overlay to each image do it here

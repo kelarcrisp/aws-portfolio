@@ -4,32 +4,37 @@ import WorkInfoCard from './WorkInfoCard/WorkInfoCard'
 import { ThemeContext } from '../../Shared/contexts/ThemeContext';
 class HomePage extends Component {
     state = {
-        showDropDown: false
+        showDropDown: true
     }
     componentDidMount() {
         setTimeout(() => {
-            if (!localStorage.getItem('showDropDown')) {
-                this.setState({ showDropDown: true })
-                localStorage.setItem('showDropDown', this.state.showDropDown)
-            }
+            this.setState({ showDropDown: false })
+            localStorage.setItem('showDropDown', this.state.showDropDown)
         }, 4000)
     }
+
     render() {
         return (
             <ThemeContext.Consumer>{(context) => {
                 const { themeColor } = context
+                // if (this.state.showDropDown && themeColor)
+                //     loadDropDown = <div className={classes.DarkHomePageContainer}> <WorkInfoCard /></div>
+
+                // if (localStorage.getItem('showDropDown'))
+                //     loadDropDown = <div className={classes.HomePageContainer}> <WorkInfoCard /> </div>
+                // if (!localStorage.getItem('showDropDown'))
+                //     loadDropDown = <div className={classes.HomePageContainerTwo}> <WorkInfoCard /> </div>
+                // if (themeColor) {
+                //     loadDropDown = <div className={classes.DarkHomePageContainerTwo}> <WorkInfoCard /> </div>
+                // }
                 let loadDropDown;
-                if (!localStorage.getItem('showDropDown') && themeColor)
-                    loadDropDown = <div className={classes.DarkHomePageContainer}> <WorkInfoCard /></div>
-
-                if (!localStorage.getItem('showDropDown') && !themeColor)
-                    loadDropDown = <div className={classes.HomePageContainer}> <WorkInfoCard /> </div>
-
-                if (localStorage.getItem('showDropDown') && themeColor) {
-                    loadDropDown = <div className={classes.DarkHomePageContainerTwo}> <WorkInfoCard /> </div>
-                }
-                else
+                console.log(localStorage.getItem('showDropDown'), 'dropDownFrom storage')
+                if (localStorage.getItem('showDropDown') == null)
+                    loadDropDown = <div className={classes.HomePageContainer}> <WorkInfoCard /></div>
+                else if (localStorage.getItem('showDropDown') !== null)
                     loadDropDown = <div className={classes.HomePageContainerTwo}> <WorkInfoCard /> </div>
+                if (themeColor)
+                    loadDropDown = <div className={classes.DarkHomePageContainerTwo}> <WorkInfoCard /> </div>
                 return (
                     <div>
                         {loadDropDown}
