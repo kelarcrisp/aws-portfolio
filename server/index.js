@@ -54,7 +54,7 @@ app.post('/api/form', (req, res) => {
     })
 })
 
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 var server = app.listen(5000, () => {
     console.log('server is running on 5000')
     var host = server.address().address;
