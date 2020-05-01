@@ -118,25 +118,27 @@ class NavHeader extends React.Component {
                             className={classes.Root}>
                             <div className={classes.Links} >
                                 <IconButton
-                                    onClick={() => window.location.href = 'https://github.com/epicoding95'}
+                                    onClick={() => window.open('https://github.com/epicoding95', '_blank')}
                                     className={themeColor ? classes.DarkLink : null}
                                     aria-label="GitHubIcon">
                                     <GitHubIcon />
                                 </IconButton>
                                 <IconButton
-                                    onClick={() => window.location.href = 'https://www.linkedin.com/in/kelarcrisp/'}
+                                    onClick={() => window.open('https://www.linkedin.com/in/kelarcrisp/', '_blank')}
                                     className={themeColor ? classes.DarkLink : null}
                                     aria-label="LinkedInIcon">
                                     < LinkedInIcon />
                                 </IconButton>
                                 <IconButton
-                                    onClick={() => window.location.href = 'https://www.instagram.com/theekilla/'}
+
+                                    onClick={() => window.open('https://www.instagram.com/theekilla/', '_blank')}
                                     className={themeColor ? classes.DarkLink : null}
                                     aria-label="InstagramIcon">
                                     < InstagramIcon />
                                 </IconButton>
                                 <IconButton
-                                    onClick={() => window.location.href = 'https:twitter.com/theekillaa'}
+
+                                    onClick={() => window.open('https:twitter.com/theekillaa', '_blank')}
                                     className={themeColor ? classes.DarkLink : null}
                                     aria-label="TwitterIcon">
                                     < TwitterIcon />
