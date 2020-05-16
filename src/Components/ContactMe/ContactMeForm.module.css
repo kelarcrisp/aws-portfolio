@@ -1,6 +1,6 @@
 
 .ContactContainer{ 
-    height: 100vh;  
+      height: 100%;  
     width: 100%;
     background: linear-gradient(90deg, #fdfbfb,  #ebedee);
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 .DarkContactContainer {
     margin-right: 0;
     padding: 60px;
-    height: 100vh;      
+    height: 80%;      
     width: 100%;
     background: #333;;
     box-sizing: border-box;
@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 10% 0;
 
 }
 .TextField{

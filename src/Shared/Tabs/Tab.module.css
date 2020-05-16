@@ -1,0 +1,17 @@
+.TabContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100px ;
+    justify-content: space-between;
+}
+
+.IndividualTabContainer{
+    display:flex;
+}
+
+.IndividualTab {
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 3px;
+    color: white; 
+}

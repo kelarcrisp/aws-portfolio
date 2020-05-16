@@ -17,14 +17,12 @@ const App = () => {
         <ThemeContext.Provider value={{ themeColor, setThemeColor }}>
           <NavHeader />
           <MiniDrawer />
-          <Switch>
-            <Route path='/' exact component={HomePage} />
-            <Route path='/Projects' component={SideProjects} />
+          <Route path='/' exact component={HomePage} />
+          {/* <Route path='/Projects' component={SideProjects} />
             <Route path='/About' component={About} />
-            <Route path='/ContactForm' component={ContactForm} />
-            <Route path='/' render={() => <div>page not found!</div>
-            } />
-          </Switch>
+            <Route path='/ContactForm' component={ContactForm} /> */}
+          {/* <Route path='/' render={() => <div>page not found!</div>
+          } /> */}
         </ThemeContext.Provider>
       </>
     </BrowserRouter>

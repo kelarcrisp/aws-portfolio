@@ -53,7 +53,7 @@ const ContactMeForm = (props) => {
     }
 
     return (
-        <div className={themeColor ? classes.DarkContactContainer : classes.ContactContainer} >
+        <div id='ContactMe' className={themeColor ? classes.DarkContactContainer : classes.ContactContainer} >
             <h3 className={classes.ContactHeader}>Fill out the form to directly contact me by Email!</h3>
             <form
                 onSubmit={handleSubmit}

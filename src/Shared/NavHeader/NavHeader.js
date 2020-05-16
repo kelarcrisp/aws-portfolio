@@ -11,23 +11,27 @@ import { useHistory } from "react-router-dom";
 import { ThemeContext } from '../contexts/ThemeContext';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
-
+import HomeIcon from '@material-ui/icons/Home';
 const styles = {
 
 
-    // ContainerDiv: {
-    //     position: 'fixed',
-    //     width: '100%',
-    //     left: '0',
-    //     boxSizing: 'border-box',
-    //     zIndex: '1',
-    //     marginBottom: '200px'
-    // },
+    ContainerDiv: {
+        position: 'fixed',
+        width: '10%',
+        height: '100vh',
+        left: '0',
+        boxSizing: 'border-box',
+        zIndex: '1',
+
+    },
     Root: {
         display: 'flex',
-        justifyContent: 'space-between',
-        animation: `$root 3s`,
-        width: "100%",
+        flexDirection: 'column',
+        alignItems: 'space-around',
+        marginTop: '40%',
+        // animation: `$root 3s`,
+        height: "50%",
+
         // //this is how you can write media queries with material ui!!
         '@media (max-width: 400px)': {
             // width: "60%",
@@ -40,11 +44,11 @@ const styles = {
 
     },
     Tabs: {
-        marginRight: '3%',
-        marginTop: '10px'
+        margin: '50px auto',
+
     },
     Links: {
-        marginLeft: '5%',
+        marginLeft: '10%',
         height: '100px',
         width: 'auto',
         display: 'flex',
@@ -106,7 +110,7 @@ class NavHeader extends React.Component {
                 let colorTheme;
                 if (themeColor) {
                     colorTheme = {
-                        background: '#333', color: '#ddd',
+                        background: '#333', color: '#ddd', border: '1px solid white'
                     }
                 } else {
                     colorTheme = { background: 'linear-gradient( 90deg,#fdfbfb, #ebedee' }
@@ -115,6 +119,7 @@ class NavHeader extends React.Component {
                     <div className={classes.ContainerDiv} >
                         <Paper square elevation={0}
                             style={colorTheme}
+
                             className={classes.Root}>
                             <div className={classes.Links} >
                                 <IconButton
@@ -144,10 +149,10 @@ class NavHeader extends React.Component {
                                     < TwitterIcon />
                                 </IconButton>
                             </div>
-                            <FormControlLabel style={{ marginTop: '10px' }} onClick={() => setThemeColor(latestColor => !latestColor)} control={<Switch style={{ color: 'white', font: '50px' }} />} label="☾" />
-                            <div
+                            <FormControlLabel style={{ marginLeft: '10%', marginTop: '30%' }} onClick={() => setThemeColor(latestColor => !latestColor)} control={<Switch style={{ color: 'white', font: '50px' }} />} label="☾" />
+                            {/* <div
 
-                                className={classes.Name}>Kelar Crisp</div>
+                                className={classes.Name}>Kelar Crisp</div> */}
                             <div className={classes.Tabs}>
 
                                 <MyTab
