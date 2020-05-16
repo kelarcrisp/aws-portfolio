@@ -1,9 +1,9 @@
 .SideProjectsContainer {
    position: relative;
    column-count: 2;
-    height: 10;
+    height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #fdfbfb,  #ebedee);
+animation: Container 2.5s;
     box-sizing: border-box;
 }
 
@@ -14,7 +14,7 @@
     width: 100%;
     background: #333;
     color: #ddd;
-    padding: 40px;
+
     box-sizing: border-box;
 }
 
@@ -79,6 +79,7 @@
 }
 /* if I ever want to create some sort of backdrop/overlay to each image do it here
 /* .SideProjectItemLeft:hover{
+
 } */
 
 .SideProjectItemLeft p,
@@ -239,3 +240,26 @@
       text-align:center;
   }
 }
+
+@keyframes Container{
+from {
+  background: space;
+  opacity: 0;
+  transform: translateX(-200%)
+}
+
+to {
+   background:space;
+  opacity: 1;
+   transform: translateX(0)
+}
+}
+
+
+
+
+
+
+
+
+

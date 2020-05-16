@@ -4,6 +4,7 @@ import WorkInfoCard from './WorkInfoCard/WorkInfoCard'
 import { ThemeContext } from '../../Shared/contexts/ThemeContext';
 import SideProjects from '../SideProjects/SideProjects';
 import ContactMeForm from '../ContactMe/ContactMeForm';
+import About from '../About/About';
 class HomePage extends Component {
     state = {
         showDropDown: true
@@ -17,7 +18,8 @@ class HomePage extends Component {
 
     render() {
         return (
-            <div id='Home'>
+            <div >
+                <About />
                 <ThemeContext.Consumer>{(context) => {
                     const { themeColor } = context
                     // if (this.state.showDropDown && themeColor)
@@ -33,7 +35,7 @@ class HomePage extends Component {
                     let loadDropDown;
                     console.log(localStorage.getItem('showDropDown'), 'dropDownFrom storage')
                     if (localStorage.getItem('showDropDown') == null)
-                        loadDropDown = <div className={classes.HomePageContainer}> <WorkInfoCard /></div>
+                        loadDropDown = <div className={classes.HomePageContainer}>  <WorkInfoCard /></div>
                     else if (localStorage.getItem('showDropDown') !== null)
                         loadDropDown = <div className={classes.HomePageContainerTwo}> <WorkInfoCard /> </div>
                     if (themeColor)

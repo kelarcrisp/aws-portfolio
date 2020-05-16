@@ -2,9 +2,10 @@
 .ContactContainer{ 
       height: 100%;  
     width: 100%;
-    background: linear-gradient(90deg, #fdfbfb,  #ebedee);
+    background: space;
     box-sizing: border-box;
     overflow: hidden;
+    animation: Container 2.5s ease;
 
 }   
 .DarkContactContainer {
@@ -61,4 +62,18 @@
         display: block;
         margin-left: 80px;
     }
+}
+
+@keyframes Container{
+from {
+  background: space;
+  opacity: 0;
+  transform: translateX(-200%)
+}
+
+to {
+   background:space;
+  opacity: 1;
+   transform: translateX(0)
+}
 }

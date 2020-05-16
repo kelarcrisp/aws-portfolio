@@ -2,10 +2,14 @@ import React from 'react';
 import classes from './About.module.css';
 const About = () => {
     return (
-        <div >
+        <div id='About' className={classes.MainContainer}>
             <div className={classes.AboutCardContainer}>
-                <header>Thanks for taking the time to look at my page!</header>
-                <p>In may of 2019 I decided to take the leap into the tech industry by joining a coding bootcamp called Epicodus. Since graduating in October of 2019 I've been working mostly with front end frameworks such as React and Angular. I'm currenly located in Seattle, Wa and would love to hear about any front-end developer opportunity! </p>
+                <h1 className={classes.Name}>Kelar Crisp</h1>
+                <h3 className={classes.Title}>Front-End Developer</h3>
+                <p className={classes.Bio}>Hello! I'm Kelar, a Seattle based software engineer with a passion for all things front-end. I recently completed an immersive web-development bootcamp at Epicodus as well as a contractor position at a Seattle based exommerce company.</p>
+                <p className={classes.Bio}> My goal is to keep learning and expanding my skillset, through work and personal projects, to build robust applications, websites and everything in between. </p>
+
+
             </div>
         </div>
     );

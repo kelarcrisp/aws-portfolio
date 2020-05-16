@@ -1,18 +1,80 @@
-.AboutCardContainer{
-    width: 70%;
-    margin: auto;
-    height: 200px;
-    text-align: center;
-    box-shadow: 0 0 20px#ccc;
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background:space;
+    /* background:   linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(200, 200, 200, 0.55)
+    ),url('../../assets/images/background.png') */
+}
 
-    padding: 10px;
-    box-sizing: border-box;
+
+.AboutCardContainer{
+    width: 50%;
+    margin: 15% auto;
+
 
 }
-.AboutContainer{
-padding-top: 40px;
-    height: 100vh;
-    width: 100%;
-    /* background: rgb(2,0,36); */
-/* background: linear-gradient(90deg, #a1c4fd,  #c2e9fb); */
+.Name{
+    font-size: 4rem;
+    font-weight: bolder;
+    animation: Name 1.5s ease;
+}
+.Image{
+
+}
+.Title{
+animation: Title 2.5s ease;
+}
+
+.Bio{
+animation: Bio 3.5s ease;
+}
+
+
+@keyframes Name{
+from {
+   background:space;
+  opacity: 0;
+  transform: translateY(-200%)
+}
+
+to {
+    background:space;
+  opacity: 1;
+   transform: translateY(0)
+}
+}
+
+
+@keyframes Title{
+from {
+   background:space;
+  opacity: 0;
+  transform: translateX(-200%)
+}
+
+to {
+    background:space;
+  opacity: 1;
+   transform: translateX(0)
+}
+}
+
+@keyframes Bio{
+from {
+   background:space;
+  opacity: 0;
+  transform: translateX(-200%)
+}
+
+to {
+    background:space;
+  opacity: 1;
+   transform: translateX(0)
+}
 }

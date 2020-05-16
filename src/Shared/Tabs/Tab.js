@@ -16,15 +16,22 @@ const MyTab = (props) => {
                 <HomeIcon /> <a
                     style={{ color: themeColor ? 'white' : 'black' }}
                     className={classes.IndividualTab}
-                    href='#Home'
-                >home</a>
+                    href='#About'
+                >About</a>
+            </div>
+            <div className={classes.IndividualTabContainer}>
+                <HomeIcon /> <a
+                    style={{ color: themeColor ? 'white' : 'black' }}
+                    className={classes.IndividualTab}
+                    href='#Work'
+                >Work</a>
             </div>
             <div className={classes.IndividualTabContainer}>
                 <ComputerIcon /><a
                     style={{ color: themeColor ? 'white' : 'black' }}
                     className={classes.IndividualTab}
                     href="#SideProjects"
-                >projects</a>
+                >Projects</a>
             </div>
             <div className={classes.IndividualTabContainer}>
                 <EmailIcon /><a

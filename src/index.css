@@ -16,6 +16,10 @@ code {
 body, html {
   padding: 0px; 
   margin: 0px;
+    /* background:   linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(200, 200, 200, 0.45)
+    ),url('./assets/images/background.png'); */
 }
 
 html{

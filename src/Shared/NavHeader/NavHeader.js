@@ -23,14 +23,18 @@ const styles = {
         boxSizing: 'border-box',
         zIndex: '1',
 
+
     },
     Root: {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'space-around',
         marginTop: '40%',
-        // animation: `$root 3s`,
+        animation: `$root 3s`,
         height: "50%",
+        minWidth: '90px',
+        maxWidth: '110px',
+        bacgkroundColor: 'space',
 
         // //this is how you can write media queries with material ui!!
         '@media (max-width: 400px)': {
@@ -76,11 +80,11 @@ const styles = {
     "@keyframes root": {
         "0%": {
             opacity: 0,
-            transform: "translateY(-200%)"
+            transform: "translateX(-200%)"
         },
         "100%": {
             opacity: 1,
-            transform: "translateY(0)"
+            transform: "translateX(0)"
         }
     },
 
@@ -113,7 +117,7 @@ class NavHeader extends React.Component {
                         background: '#333', color: '#ddd', border: '1px solid white'
                     }
                 } else {
-                    colorTheme = { background: 'linear-gradient( 90deg,#fdfbfb, #ebedee' }
+                    colorTheme = { background: 'space', border: '1px solid black' }
                 }
                 return (
                     <div className={classes.ContainerDiv} >

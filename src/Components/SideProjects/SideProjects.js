@@ -1,10 +1,17 @@
 import React, { useContext } from 'react';
 import classes from './SideProjects.module.css';
-import { ThemeContext } from '../../Shared/contexts/ThemeContext';;
+import { ThemeContext } from '../../Shared/contexts/ThemeContext';
+import { useInView } from 'react-intersection-observer'
 const SideProjects = () => {
     const { themeColor } = useContext(ThemeContext)
+
+    const [ref, inView, entry] = useInView({
+        /* Optional options */
+        triggerOnce: true,
+        threshold: 0,
+    })
     return (
-        <div id='SideProjects' className={themeColor ? classes.DarkSideProjectsContainer : classes.SideProjectsContainer}>
+        <div id='SideProjects' ref={ref} className={inView ? classes.SideProjectsContainer : null}>
 
 
             <div className={themeColor ? classes.DarkProjectItemLeft : classes.SideProjectItemLeft}> <a href='https://github.com/epicoding95/chat-room'>Chat Room</a><img src={require('../../assets/images/newimage.png')} alt='codeimage' /> <p> Application in which you can log in and immediately join the greatest conversation on earth. Built with React/Node.js/Socket.io/Material-UI</p></div>

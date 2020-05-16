@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import SendIcon from '@material-ui/icons/Send';
 import axios from 'axios';
 import { ThemeContext } from '../../Shared/contexts/ThemeContext';
+import { useInView } from 'react-intersection-observer'
 const ContactMeForm = (props) => {
 
     const { themeColor } = useContext(ThemeContext)
@@ -12,6 +13,13 @@ const ContactMeForm = (props) => {
     const [title, setTitle] = useState('');
     const [message, setMessage] = useState('');
     const [isSent, setIsSent] = useState();
+
+
+    const [ref, inView, entry] = useInView({
+        /* Optional options */
+        triggerOnce: true,
+        threshold: 0,
+    })
 
     const handleChange = (e) => {
         e.preventDefault();
@@ -53,7 +61,7 @@ const ContactMeForm = (props) => {
     }
 
     return (
-        <div id='ContactMe' className={themeColor ? classes.DarkContactContainer : classes.ContactContainer} >
+        <div ref={ref} id='ContactMe' className={inView ? classes.ContactContainer : null} >
             <h3 className={classes.ContactHeader}>Fill out the form to directly contact me by Email!</h3>
             <form
                 onSubmit={handleSubmit}

@@ -8,6 +8,9 @@
     font-family: 'Raleway', sans-serif;
     /* margin-top: 100px; */
 }
+.MainContainer{
+      animation: Container 2s ease;
+}
 
 .DarkCardContainer{
     margin: 40px auto;
@@ -34,4 +37,18 @@
     .HeaderText{
         display: block;
     }
+}
+
+@keyframes Container{
+from {
+  background: space;
+  opacity: 0;
+  transform: translateX(-200%)
+}
+
+to {
+   background:space;
+  opacity: 1;
+   transform: translateX(0)
+}
 }
