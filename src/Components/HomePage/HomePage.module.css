@@ -44,7 +44,7 @@
 from {
    background: linear-gradient(90deg, #fdfbfb,  #ebedee);
   opacity: 0;
-  transform: translateY(-200%)
+  transform: translateY(-100%)
 }
 
 to {

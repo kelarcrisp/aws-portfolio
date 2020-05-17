@@ -1,208 +1,56 @@
 .SideProjectsContainer {
    position: relative;
-   column-count: 2;
-    height: 100%;
-    width: 100%;
-animation: Container 2.5s;
-    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
 }
 
 .DarkSideProjectsContainer{
-   position: relative;
-   column-count: 2;
-    height: 100%;
-    width: 100%;
-    background: #333;
-    color: #ddd;
-
-    box-sizing: border-box;
-}
-
-.SideProjectItemLeft{
-    height: 420px;
-    width: 400px; 
-    text-align: center;
-    box-shadow: 2px 2px 1px #ccc;
-    box-sizing: border-box;
-    margin-left: 23%;
-    margin-bottom: 50px;
-    padding-top: 5px;
-    white-space: pre-line;
-    vertical-align: center;
-    color: #585B5D;
-    font-family: 'Raleway', sans-serif;
     position: relative;
-    vertical-align: center;
-    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
 }
 
-.SideProjectItemRight{
-    height: 420px;
-    width: 400px; 
-    text-align: center;
-    box-shadow: 2px 2px 1px #ccc;
-    box-sizing: border-box;
-    margin-left: 20%;
-    margin-top: 50px;
-    white-space: pre-line;
-    vertical-align: center;
-    color: #585B5D;
-    font-family: 'Raleway', sans-serif;
-    position: relative; 
+.SideProjectItem{
+    display: flex;
+    flex-direction: column;
+    height: 175px;
+    width: 80%;
+    margin-left: 10%;
+    border:1px solid yellow;
+    margin: 5px 5px 5px 10%;
+}
+.SideProjectItem >a {
+    margin-left: 15px;
 }
 
-.DarkProjectItemLeft{
-    height: 420px;
-    width: 400px; 
-    text-align: center;
-    box-shadow: 0px 0px 4px #ccc;
-    box-sizing: border-box;
-    margin-left: 20%;
-    margin-bottom: 50px;
-    font-family: 'Raleway', sans-serif;
-    position: relative;
-    color: #ddd;
-    vertical-align:center;
+.SideProjectItem .ProjectItemInfo{
+   position: absolute;
+  display: inline-block;
+  left: 20%;
+  top:20%;
 }
-.DarkProjectItemRight{
-    height: 420px;
-    width: 400px; 
-    text-align: center;
-    box-shadow: 0px 0px 4px #ccc;
-    box-sizing: border-box;
-    margin-left: 20%;
-    margin-bottom: 50px;
-    color: #ddd;
-    font-family: 'Raleway', sans-serif;
-    position: relative; 
+
+.ProjectItemInfo{
+     background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(22, 160, 133,1.0) 50%);
+     background-size: 200%;
+  background-position: 0 0;
+  display: inline;
+  transition: .8s ease-in-out;
+font-family: 'Dosis', sans-serif;
+    }
+       
+.ProjectItemInfo:hover{ 
+     transform: translateY(-5px) scale(1.01);
+    background-position: -100% 0; 
 
 }
-/* if I ever want to create some sort of backdrop/overlay to each image do it here
-/* .SideProjectItemLeft:hover{
-
-} */
-
-.SideProjectItemLeft p,
-.DarkSideProjectItemLeft p{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.PlaceHolder{
+width: 150px;
+height: 150px;
+background-color: blue;
 }
 
 
-.SideProjectItemRight p{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-
-.SideProjectItemLeft a{
-    color: #585B5D;
-    position: relative;
-    text-decoration: none;
-    transition: color .4s ease-out;
-    font-size: 24px;
-}
-
-.DarkProjectItemLeft a{
-    color: #ddd;
-    position: relative;
-    text-decoration: none;
-    transition: color .4s ease-out;
-    font-size: 24px;
-}
-
-.SideProjectItemRight a:hover {
-    color: #585B5D;
-    right: 0;
-    text-decoration: none;
-}
-
-.SideProjectItemLeft a:hover:after {
-    border-color: #585B5D;
-    right: 0;
-    bottom: -5px;
-}
-
-.SideProjectItemLeft a:after {
-    border-radius: 1em;
-    border-top: .1em solid #585B5D;
-    content: "";
-    position: absolute;
-    right: 100%;
-    bottom: .14em;
-    left: 0;
-    transition: right .4s cubic-bezier(0,.5,0,1),
-                border-color .4s ease-out;
-  }
-
-.SideProjectItemLeft a:hover:after {
-    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
-    border-color: #585B5D;
-}
-
-@keyframes anchor-underline {
-  0%, 10% {
-    left: 0;
-    right: 100%;
-  }
-  40%, 60% {
-    left: 0;
-    right: 0;
-  }
-  90%, 100% {
-    left: 100%;
-    right: 0;
-  }
-}
-
-
-
-.SideProjectItemRight a{
-    color: #585B5D;
-    position: relative;
-    text-decoration: none;
-    transition: color .4s ease-out;
-    font-size: 24px;
-}
-
-.DarkProjectItemRight a{
-    color: #ddd;
-    position: relative;
-    text-decoration: none;
-    transition: color .4s ease-out;
-    font-size: 24px;
-}
-
-.SideProjectItemRight a:hover {
-    color: #585B5D;
-    right: 0;
-    text-decoration: none;
-}
-
-.SideProjectItemRight a:hover:after {
-    border-color: #585B5D;
-    right: 0;
-    bottom: -5px;
-}
-
-.SideProjectItemRight a:after {
-    border-radius: 1em;
-    border-top: .1em solid #585B5D;
-    content: "";
-    position: absolute;
-    right: 100%;
-    bottom: .14em;
-    left: 0;
-    transition: right .4s cubic-bezier(0,.5,0,1),
-                border-color .4s ease-out;
-}
-
-.SideProjectItemRight a:hover:after {
-    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
-    border-color: #585B5D;
-}
 
 @media (max-width: 700px){
   .SideProjectsContainer{
@@ -210,7 +58,7 @@ animation: Container 2.5s;
     margin-left: 0px;
     padding-left: 0px;
   } 
-  .SideProjectItemLeft{
+  .SideProjectItem{
     position: relative;
     width:375px;
     margin-left: 0px;
@@ -219,40 +67,12 @@ animation: Container 2.5s;
     vertical-align: center;
 
   }
-  .SideProjectItemRight{
-      position: relative;
-      width:375px;
-      height: 450px;
-      margin-left: 0px;
-      padding-left: 20px;
-      word-wrap: break-word;
-      vertical-align: center;
-  }
-  .SideProjectItemLeft p{
+  .SideProjectItem p{
       width: 300px; 
       margin-left: 40px;
       text-align: center;
 
   }
-   .SideProjectItemRight p{
-      width: 300px;
-      margin-left: 40px;
-      text-align:center;
-  }
-}
-
-@keyframes Container{
-from {
-  background: space;
-  opacity: 0;
-  transform: translateX(-200%)
-}
-
-to {
-   background:space;
-  opacity: 1;
-   transform: translateX(0)
-}
 }
 
 

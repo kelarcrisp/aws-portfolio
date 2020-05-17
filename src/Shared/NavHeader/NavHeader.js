@@ -125,6 +125,21 @@ class NavHeader extends React.Component {
                             style={colorTheme}
 
                             className={classes.Root}>
+
+                            <FormControlLabel style={{ marginLeft: '10%', marginTop: '30%' }} onClick={() => setThemeColor(latestColor => !latestColor)} control={<Switch style={{ color: 'white', font: '50px' }} />} label="☾" />
+                            {/* <div
+
+                                className={classes.Name}>Kelar Crisp</div> */}
+                            <div className={classes.Tabs}>
+
+                                <MyTab
+                                    context={themeColor}
+                                    onChange={this.handleChange}
+                                    className={classes.Tabs}
+                                    value={this.state.value}
+
+                                />
+                            </div>
                             <div className={classes.Links} >
                                 <IconButton
                                     onClick={() => window.open('https://github.com/epicoding95', '_blank')}
@@ -152,20 +167,6 @@ class NavHeader extends React.Component {
                                     aria-label="TwitterIcon">
                                     < TwitterIcon />
                                 </IconButton>
-                            </div>
-                            <FormControlLabel style={{ marginLeft: '10%', marginTop: '30%' }} onClick={() => setThemeColor(latestColor => !latestColor)} control={<Switch style={{ color: 'white', font: '50px' }} />} label="☾" />
-                            {/* <div
-
-                                className={classes.Name}>Kelar Crisp</div> */}
-                            <div className={classes.Tabs}>
-
-                                <MyTab
-                                    context={themeColor}
-                                    onChange={this.handleChange}
-                                    className={classes.Tabs}
-                                    value={this.state.value}
-
-                                />
                             </div>
                         </Paper>
                     </div>

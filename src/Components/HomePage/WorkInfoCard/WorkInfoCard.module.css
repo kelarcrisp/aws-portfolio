@@ -1,16 +1,45 @@
-.CardContainer{
+/* 
+.MainContainer{
+      animation: Container 2s;
+} */
+.MainContainerPlaceHolder{
+    background: space;
+}
+
+.CardContainerOne{
     margin: 40px auto;
     width: 25%;
     text-align: center;
     box-shadow: 0 0 4px #ccc;
     padding: 10px;
     box-sizing: border-box; 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    animation : Container 2s
     /* margin-top: 100px; */
 }
-.MainContainer{
-      animation: Container 2s ease;
+.CardContainerTwo{
+    margin: 40px auto;
+    width: 25%;
+    text-align: center;
+    box-shadow: 0 0 4px #ccc;
+    padding: 10px;
+    box-sizing: border-box; 
+    font-family: 'Dosis', sans-serif;
+     animation : Container 3s
+    /* margin-top: 100px; */
 }
+.CardContainerThree{
+    margin: 40px auto;
+    width: 25%;
+    text-align: center;
+    box-shadow: 0 0 4px #ccc;
+    padding: 10px;
+    box-sizing: border-box; 
+    font-family: 'Dosis', sans-serif;
+     animation : Container 4s
+    /* margin-top: 100px; */
+}
+
 
 .DarkCardContainer{
     margin: 40px auto;
@@ -19,13 +48,13 @@
     box-shadow: 0 0 8px #ccc;
     padding: 10px;
     box-sizing: border-box; 
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Dosis', sans-serif;
     color: #ddd
 }
 
 .HeaderText{
     display:none;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Dosis', sans-serif;
     text-align: center;
     margin-left: 15px;
 }
@@ -39,11 +68,11 @@
     }
 }
 
-@keyframes Container{
+/* @keyframes Container{
 from {
   background: space;
   opacity: 0;
-  transform: translateX(-200%)
+  transform: translateX(-100%)
 }
 
 to {
@@ -51,4 +80,4 @@ to {
   opacity: 1;
    transform: translateX(0)
 }
-}
+} */
