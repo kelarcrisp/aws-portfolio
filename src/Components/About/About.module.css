@@ -11,7 +11,16 @@
       rgba(200, 200, 200, 0.55)
     ),url('../../assets/images/background.png') */
 }
-
+.DarkContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background:#333;
+    color:white;
+}
 
 .AboutCardContainer{
     width: 50%;
@@ -19,24 +28,35 @@
 
 
 }
+
 .Name{
-    font-size: 4rem;
-    font-weight: bolder;
-    animation: Name 1.5s ease;
+  animation: name 5.5s ease;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.Image{
+.Name::after{
+   content: 'Front End Developer';
+     margin-top: 25px;
+    font-size: 21px;
+    display: block;
 
 }
-.Title{
-animation: Title 2.5s ease;
-}
-
 .Bio{
 animation: Bio 3.5s ease;
 }
 
+@keyframes name{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
 
-@keyframes Name{
+
+
+/* @keyframes Name{
 from {
    background:space;
   opacity: 0;
@@ -77,4 +97,4 @@ to {
   opacity: 1;
    transform: translateX(0)
 }
-}
+} */

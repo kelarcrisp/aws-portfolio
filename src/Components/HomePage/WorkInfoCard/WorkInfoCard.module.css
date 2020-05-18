@@ -1,12 +1,6 @@
-/* 
-.MainContainer{
-      animation: Container 2s;
-} */
-.MainContainerPlaceHolder{
-    background: space;
-}
 
-.CardContainerOne{
+
+.CardContainer{
     margin: 40px auto;
     width: 25%;
     text-align: center;
@@ -15,33 +9,10 @@
     box-sizing: border-box; 
     font-family: 'Dosis', sans-serif;
     animation : Container 2s
-    /* margin-top: 100px; */
-}
-.CardContainerTwo{
-    margin: 40px auto;
-    width: 25%;
-    text-align: center;
-    box-shadow: 0 0 4px #ccc;
-    padding: 10px;
-    box-sizing: border-box; 
-    font-family: 'Dosis', sans-serif;
-     animation : Container 3s
-    /* margin-top: 100px; */
-}
-.CardContainerThree{
-    margin: 40px auto;
-    width: 25%;
-    text-align: center;
-    box-shadow: 0 0 4px #ccc;
-    padding: 10px;
-    box-sizing: border-box; 
-    font-family: 'Dosis', sans-serif;
-     animation : Container 4s
-    /* margin-top: 100px; */
 }
 
 
-.DarkCardContainer{
+.DarkContainer{
     margin: 40px auto;
     width: 25%;
     text-align: center;
@@ -49,6 +20,7 @@
     padding: 10px;
     box-sizing: border-box; 
     font-family: 'Dosis', sans-serif;
+    background:#333;
     color: #ddd
 }
 
