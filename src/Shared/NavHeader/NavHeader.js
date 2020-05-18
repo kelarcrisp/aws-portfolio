@@ -31,7 +31,7 @@ const styles = {
         alignItems: 'space-around',
         marginTop: '40%',
         animation: `$root 3s`,
-        height: "52%",
+        height: "400px",
         minWidth: '90px',
         maxWidth: '110px',
         bacgkroundColor: 'space',
@@ -45,7 +45,7 @@ const styles = {
         },
         '@media (max-width: 1100px)': {
             // width: "60%",
-            height: '65%'
+            height: '500px'
         }
     },
     ///side drawer for mobile users
