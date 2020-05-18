@@ -15,23 +15,25 @@
     flex-direction: column;
     height: 175px;
     width: 80%;
-    margin-left: 10%;
-    border:1px solid yellow;
-    margin: 5px 5px 5px 10%;
+    border:1px solid gray;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 5px;
+    margin: 5px 5px 5px 12%;
 }
 .SideProjectItem >a {
     margin-left: 15px;
 }
 
+
 .SideProjectItem .ProjectItemInfo{
    position: absolute;
   display: inline-block;
-  left: 20%;
+  left: 22%;
   top:20%;
 }
 
 .ProjectItemInfo{
-     background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(22, 160, 133,1.0) 50%);
+     background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(255, 255, 0,1.0) 50%);
      background-size: 200%;
   background-position: 0 0;
   display: inline;
@@ -52,28 +54,6 @@ background-color: blue;
 
 
 
-@media (max-width: 700px){
-  .SideProjectsContainer{
-    column-count: 1;
-    margin-left: 0px;
-    padding-left: 0px;
-  } 
-  .SideProjectItem{
-    position: relative;
-    width:375px;
-    margin-left: 0px;
-    padding-left: 20px;
-    word-wrap: break-word;
-    vertical-align: center;
-
-  }
-  .SideProjectItem p{
-      width: 300px; 
-      margin-left: 40px;
-      text-align: center;
-
-  }
-}
 
 
 

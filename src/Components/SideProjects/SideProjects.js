@@ -14,24 +14,22 @@ const SideProjects = () => {
         <div id='SideProjects' className={themeColor ? classes.DarkSideProjectsContainer : classes.SideProjectsContainer}>
             <div
                 data-aos='fade-left'
-                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a href='https://github.com/epicoding95/chat-room'>Chat Room</a><div className={classes.PlaceHolder}></div> <p className={classes.ProjectItemInfo}> Application in which you can log in and immediately join the greatest conversation on earth. Built with React/Node.js/Socket.io/Material-UI</p></div>
-
-            <div
-                data-aos='fade-right'
-                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a href='https://github.com/epicoding95/spotify-KR'>Spotify Clone
+                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a href='https://github.com/epicoding95/spotify-KR'>Movie Nerd
                </a>
                 <div className={classes.PlaceHolder}></div>
                 <p className={classes.ProjectItemInfo}>
-                    -WIP-
-                      Spotify Clone came from an idea in using spotify all the time. I wanted to create a spotify website that is exactly how I'd like to have access to my top artists, playlists, etc.</p></div>
+                    An application in which shows you the top movies out, the top comedies out, and allows for you to search for any other movie you might be interested in with detailed info about each. Such as the actors within the movie, how long the movie is, ratings for the movie, and a link to watch the trailer for it. Built with React/Material.UI</p></div>
+            <div
+                data-aos='fade-right'
+                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a data-tool-tip='a cool tool tip' href='https://github.com/epicoding95/chat-room'>Chat Room</a><div className={classes.PlaceHolder}></div> <p className={classes.ProjectItemInfo}> An Application in which you can log in and immediately get put into a real time chat application Built with React/Node.js/Socket.io/Material-UI</p></div>
 
             <div
                 data-aos='fade-left'
-                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a href='https://github.com/epicoding95/burger-builder'>Burger Builder </a> <div className={classes.PlaceHolder}></div><p className={classes.ProjectItemInfo}> Burger Builder has been used as a practice project in which i've used to learn/test different ideas between React/Redux/Firebase.</p></div>
+                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a href='https://github.com/epicoding95/burger-builder'>Developer Jobs </a> <div className={classes.PlaceHolder}></div><p className={classes.ProjectItemInfo}> Developer Jobs was created for software developers who are looking for a job, this website allows users to see many different jobs in the indutry and shows all of the information needed to apply for this job. This project was built with GraphQl, Apollo Client, and React.</p></div>
 
 
             <div data-aos='fade-left'
-                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a href='https://github.com/epicoding95?tab=repositories&q=circles&type=&language='> Circles </a><div className={classes.PlaceHolder}></div><p className={classes.ProjectItemInfo}>Team project in which was built by me and 3 friends. This website allows you to create a circle, invite people to your circle, or join someone elses circle. The idea of this project was to have a place where like minded people could get together to do said activity. </p></div>
+                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a href='https://github.com/epicoding95?tab=repositories&q=circles&type=&language='> Redas forgetful list </a><div className={classes.PlaceHolder}></div><p className={classes.ProjectItemInfo}>A small app that I personally use to help remember things for when I go grocery Shopping. Built with React/Firebase. </p></div>
 
 
 

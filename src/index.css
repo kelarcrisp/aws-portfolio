@@ -21,6 +21,7 @@ body, html {
       rgba(200, 200, 200, 0.45)
     ),url('./assets/images/background.png'); */
   font-family: 'Dosis', sans-serif;
+  min-width: 825px !important;
 }
 
 html{

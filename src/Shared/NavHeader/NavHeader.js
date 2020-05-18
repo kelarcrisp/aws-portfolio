@@ -31,15 +31,21 @@ const styles = {
         alignItems: 'space-around',
         marginTop: '40%',
         animation: `$root 3s`,
-        height: "50%",
+        height: "52%",
         minWidth: '90px',
         maxWidth: '110px',
         bacgkroundColor: 'space',
+        boxShadow: "1px 1px 1px black",
+        borderRadius: '5px',
 
         // //this is how you can write media queries with material ui!!
         '@media (max-width: 400px)': {
             // width: "60%",
             display: "none"
+        },
+        '@media (max-width: 1100px)': {
+            // width: "60%",
+            height: '65%'
         }
     },
     ///side drawer for mobile users
@@ -53,11 +59,9 @@ const styles = {
     },
     Links: {
         marginLeft: '10%',
-        height: '100px',
         width: 'auto',
         display: 'flex',
         flexWrap: 'wrap',
-        marginTop: '10px'
 
     },
     DarkLink: {
