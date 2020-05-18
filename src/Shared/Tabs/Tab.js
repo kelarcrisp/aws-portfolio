@@ -37,7 +37,7 @@ const MyTab = (props) => {
                 <EmailIcon /><a
                     style={{ color: themeColor ? 'white' : 'black' }}
                     className={classes.IndividualTab}
-                    href='#ContactMe' >Email</a>
+                    href="#ContactMe" >Email</a>
             </div>
         </div >
 

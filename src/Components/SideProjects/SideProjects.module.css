@@ -66,38 +66,19 @@
 .ProjectLink{
     color:black;;
     text-decoration: none;
-  padding-left: 20px;
-  white-space: nowrap;
-  font-size:1.2rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    font-size:1.2rem;
  
 }
 .DarkProjectLink{
-  
+    color:white;
+    text-decoration: none;
+    padding-left: 20px;
+    white-space: nowrap;
+    font-size:1.2rem;
 }
 
-
-/* @media (max-width: 700px){
-  .SideProjectsContainer{
-    column-count: 1;
-    margin-left: 0px;
-    padding-left: 0px;
-  } 
-  .SideProjectItem{
-    position: relative;
-    width:375px;
-    margin-left: 0px;
-    padding-left: 20px;
-    word-wrap: break-word;
-    vertical-align: center;
-
-  }
-  .SideProjectItem p{
-      width: 300px; 
-      margin-left: 40px;
-      text-align: center;
-
-  }
-} */
 
 
 

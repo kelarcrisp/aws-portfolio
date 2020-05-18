@@ -16,7 +16,7 @@ const WorkInfoCard = props => {
 
 
     return (
-        <div ref={ref} id='Work'>
+        <div ref={ref} id='Work' style={{ padddingTop: '50px' }}>
             <div id='first' className={themeColor ? classes.DarkContainer : classes.CardContainer} data-aos='fade-left'>
                 <p>Replenium</p>
                 <p>Full-time Contract position</p>
