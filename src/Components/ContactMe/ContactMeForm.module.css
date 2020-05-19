@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10% 0;
+    margin: 2% 0% 10% 0%;
 
 }
 .TextField{
@@ -43,7 +43,12 @@
 
 .ContactHeader{
     text-align: center;
-   margin-bottom: -100px;
+   margin-top: 50px;
+}
+.DarkContactHeader{
+    text-align: center;
+    margin-top: 50px;
+    color:white;
 }
 
 
@@ -53,16 +58,11 @@
 } 
 
 @media (max-width: 400px){
-    .TextField{
-        width: 200px;
+    .ContactContainer{
+        width: 450px;
+        margin-left: 0%;
     }
-    .FormInfoContainer{
-        margin-left: 60px;
-    }
-    .ContactHeader{
-        display: block;
-        margin-left: 80px;
-    }
+   
 }
 
 @keyframes Container{

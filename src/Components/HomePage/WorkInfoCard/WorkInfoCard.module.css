@@ -33,7 +33,9 @@
 
 @media (max-width: 400px){
     .CardContainer{
-        width: 50%;
+        text-align: left;
+        margin-left: 15%;
+       
     }
     .HeaderText{
         display: block;

@@ -35,14 +35,14 @@ const styles = {
         minWidth: '90px',
         maxWidth: '110px',
         bacgkroundColor: 'space',
-        boxShadow: "1px 1px 1px black",
+        boxShadow: "0px 0px 4px #ccc",
         borderRadius: '5px',
 
         // //this is how you can write media queries with material ui!!
-        '@media (max-width: 400px)': {
-            // width: "60%",
-            display: "none"
-        },
+        // '@media (max-width: 400px)': {
+        //     // width: "60%",
+        //     display: "none"
+        // },
         '@media (max-width: 1100px)': {
             // width: "60%",
             height: '500px'
@@ -58,7 +58,7 @@ const styles = {
 
     },
     Links: {
-        marginLeft: '10%',
+        marginLeft: '5%',
         width: 'auto',
         display: 'flex',
         flexWrap: 'wrap',

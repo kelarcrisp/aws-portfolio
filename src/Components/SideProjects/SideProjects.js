@@ -29,7 +29,7 @@ const SideProjects = () => {
 
 
             <div data-aos='fade-right'
-                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a className={themeColor ? classes.DarkProjectLink : classes.ProjectLink} href='https://redas-forgetful-list.web.app/' target='_blank'> Redas forgetful list </a><img style={{ maxHeight: '175x', maxWidth: '175px', marginLeft: '10px' }} src={require('../../assets/images/forgetfulListImage.png')} alt='codeimage' /><p className={classes.ProjectItemInfo}>A small app that I personally use to help remember things for when I go grocery Shopping. Built with React/Firebase. </p></div>
+                className={themeColor ? classes.DarkProjectItem : classes.SideProjectItem}> <a className={themeColor ? classes.DarkProjectLink : classes.ProjectLink} href='https://redas-forgetful-list.web.app/' target='_blank'> Reda's Forgetful List </a><img style={{ maxHeight: '175x', maxWidth: '175px', marginLeft: '10px' }} src={require('../../assets/images/forgetfulListImage.png')} alt='codeimage' /><p className={classes.ProjectItemInfo}>A small app that I personally use to help remember things for when I go grocery Shopping. Built with React/Firebase. </p></div>
 
 
 

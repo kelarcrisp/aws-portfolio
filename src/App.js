@@ -16,7 +16,7 @@ const App = () => {
       <>
         <ThemeContext.Provider value={{ themeColor, setThemeColor }}>
           <NavHeader />
-          <MiniDrawer />
+          {/* <MiniDrawer /> */}
           <Route path='/' exact component={HomePage} />
           {/* <Route path='/Projects' component={SideProjects} />
             <Route path='/About' component={About} />

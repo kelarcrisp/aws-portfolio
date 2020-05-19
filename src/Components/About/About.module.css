@@ -53,6 +53,12 @@ animation: Bio 3.5s ease;
     width: 100%;
   }
 }
+@media(max-width: 500px){
+  .MainContainer{
+    width: 250px;
+    margin-left: 15%;
+  }
+}
 
 
 
