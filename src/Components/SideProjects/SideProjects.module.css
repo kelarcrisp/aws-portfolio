@@ -83,11 +83,11 @@
     margin: 0;
 }
 .DarkProjectLink{
-    color:white;
-    text-decoration: none;
-    padding-left: 20px;
-    white-space: nowrap;
-    font-size:1.2rem;
+     position: absolute;
+    left: 53%;
+    bottom: 35px;  
+ text-decoration: none;
+ color:white;
 }
 .ProjectLink{
     position: absolute;
@@ -104,20 +104,31 @@
      text-decoration: none;
  color:gray;
 }
+.DarkGitHubLink{
+      position: absolute;
+    left: 57%;
+    bottom: 35px; 
+     text-decoration: none;
+ color:white;
+}
 
 @media(max-width: 1175px){
+    .DarkProjectLink,
     .ProjectLink{
 bottom: 15px;
     }
+   .DarkGitHubLink,
     .GitHubLink{
 bottom: 15px;
     }
 }
 
 @media(max-width: 1000px){
+    .DarkProjectLink,
     .ProjectLink{
 top: 5px;
     }
+    .DarkGitHubLink,
     .GitHubLink{
 top:5px;
 
