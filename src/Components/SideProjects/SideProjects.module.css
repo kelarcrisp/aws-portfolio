@@ -48,13 +48,14 @@
 }
 
 .ProjectItemInfo{
-     background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(92, 151, 255,1.0) 50%);
+     background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(81, 203, 238,1.0) 50%);
      background-size: 200%;
     background-position: 0 0;
     display: inline;
     transition: .8s ease-in-out;
     font-family: 'Dosis', sans-serif;
     margin-left: 40px;
+    line-height: 1.4;
     }
        
 .ProjectItemInfo:hover{ 
@@ -85,14 +86,14 @@
 .DarkProjectLink{
      position: absolute;
     left: 53%;
-    bottom: 35px;  
+    bottom: 30px;  
  text-decoration: none;
  color:white;
 }
 .ProjectLink{
     position: absolute;
     left: 53%;
-    bottom: 35px;  
+    bottom: 30px;  
  text-decoration: none;
  color:gray;
 }
@@ -100,14 +101,14 @@
 .GitHubLink{
     position: absolute;
     left: 57%;
-    bottom: 35px; 
+    bottom: 30px; 
      text-decoration: none;
  color:gray;
 }
 .DarkGitHubLink{
       position: absolute;
     left: 57%;
-    bottom: 35px; 
+    bottom: 30px; 
      text-decoration: none;
  color:white;
 }
@@ -115,11 +116,11 @@
 @media(max-width: 1175px){
     .DarkProjectLink,
     .ProjectLink{
-bottom: 15px;
+bottom: 12px;
     }
    .DarkGitHubLink,
     .GitHubLink{
-bottom: 15px;
+bottom: 12px;
     }
 }
 

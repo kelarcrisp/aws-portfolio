@@ -8,7 +8,8 @@
     padding: 10px;
     box-sizing: border-box; 
     font-family: 'Dosis', sans-serif;
-    animation : Container 2s
+    animation : Container 2s;
+    line-height: 1.6;
 }
 
 
@@ -21,7 +22,8 @@
     box-sizing: border-box; 
     font-family: 'Dosis', sans-serif;
     background:#333;
-    color: #ddd
+    color: #ddd;
+    line-height: 1.6;
 }
 
 .HeaderText{
