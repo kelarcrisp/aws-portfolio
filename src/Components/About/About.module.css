@@ -45,6 +45,8 @@
 animation: Bio 3.5s ease;
 }
 
+
+
 @keyframes name{
   from{
     width: 0%;
