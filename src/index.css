@@ -27,3 +27,14 @@ body, html {
 html{
   scroll-behavior: smooth;
 }
+
+
+#About{
+ position: relative;
+
+}
+ 
+canvas{
+position: absolute;;
+ z-index: -2;
+}
