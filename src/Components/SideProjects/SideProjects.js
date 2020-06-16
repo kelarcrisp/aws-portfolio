@@ -164,7 +164,7 @@ const SideProjects = () => {
         </a>
         <a
           className={themeColor ? classes.DarkGitHubLink : classes.GitHubLink}
-          href="https://github.com/epicoding95/redasForgetfulList"
+          href="https://github.com/epicoding95/RFL-Trello"
           target="_blank"
         >
           <GitHubIcon />
