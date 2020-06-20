@@ -157,7 +157,7 @@ const SideProjects = () => {
         </p>
         <a
           className={themeColor ? classes.DarkProjectLink : classes.ProjectLink}
-          href="https://redas-forgetful-list.web.app/"
+          href="https://trello-52052.web.app/"
           target="_blank"
         >
           <LanguageIcon />
