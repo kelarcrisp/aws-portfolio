@@ -1,68 +1,62 @@
-.MainContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background:space;
-    /* background:   linear-gradient(
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: space;
+  /* background:   linear-gradient(
       rgba(255, 255, 255, 0.45), 
       rgba(200, 200, 200, 0.55)
     ),url('../../assets/images/background.png') */
 }
-.DarkContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background:#333;
-    color:white;
+.DarkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  color: white;
 }
 
-.AboutCardContainer{
-    width: 50%;
-    margin: 15% auto;
-
-
+.AboutCardContainer {
+  width: 50%;
+  margin: 12% auto;
 }
 
-.Name{
+.Name {
   animation: name 5.5s ease;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 2.5rem;
 }
-.Name::after{
-   content: 'Front End Developer';
-     margin-top: 25px;
-    font-size: 21px;
-    display: block;
-
+.Name::after {
+  content: "Front End Developer";
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  display: block;
 }
-.Bio{
-animation: Bio 3.5s ease;
+.Bio {
+  animation: Bio 3.5s ease;
 }
 
-
-
-@keyframes name{
-  from{
+@keyframes name {
+  from {
     width: 0%;
   }
-  to{
+  to {
     width: 100%;
   }
 }
-@media(max-width: 500px){
-  .MainContainer{
+@media (max-width: 500px) {
+  .MainContainer {
     width: 250px;
     margin-left: 15%;
   }
 }
-
-
 
 /* @keyframes Name{
 from {
