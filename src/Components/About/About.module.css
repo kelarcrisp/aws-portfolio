@@ -53,8 +53,8 @@
 }
 @media (max-width: 500px) {
   .MainContainer {
-    width: 250px;
-    margin-left: 15%;
+    width: 350px;
+    margin-left: 10%;
   }
 }
 

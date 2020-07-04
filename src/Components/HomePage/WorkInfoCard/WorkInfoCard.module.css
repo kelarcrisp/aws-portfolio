@@ -1,47 +1,43 @@
-
-
-.CardContainer{
-    margin: 40px auto;
-    width: 25%;
-    text-align: center;
-    box-shadow: 0 0 4px #ccc;
-    padding: 10px;
-    box-sizing: border-box; 
-    font-family: 'Dosis', sans-serif;
-    animation : Container 2s;
-    line-height: 1.6;
+.CardContainer {
+  margin: 40px auto;
+  width: 25%;
+  text-align: center;
+  box-shadow: 0 0 4px #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  animation: Container 2s;
+  line-height: 1.6;
 }
 
-
-.DarkContainer{
-    margin: 40px auto;
-    width: 25%;
-    text-align: center;
-    box-shadow: 0 0 8px #ccc;
-    padding: 10px;
-    box-sizing: border-box; 
-    font-family: 'Dosis', sans-serif;
-    background:#333;
-    color: #ddd;
-    line-height: 1.6;
+.DarkContainer {
+  margin: 40px auto;
+  width: 25%;
+  text-align: center;
+  box-shadow: 0 0 8px #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
+  background: #333;
+  color: #ddd;
+  line-height: 1.6;
 }
 
-.HeaderText{
-    display:none;
-    font-family: 'Dosis', sans-serif;
-    text-align: center;
-    margin-left: 15px;
+.HeaderText {
+  display: none;
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  margin-left: 15px;
 }
 
-@media (max-width: 400px){
-    .CardContainer{
-        text-align: left;
-        margin-left: 15%;
-       
-    }
-    .HeaderText{
-        display: block;
-    }
+@media (max-width: 400px) {
+  .CardContainer {
+    text-align: left;
+    margin-left: 15%;
+  }
+  .HeaderText {
+    display: block;
+  }
 }
 
 /* @keyframes Container{
