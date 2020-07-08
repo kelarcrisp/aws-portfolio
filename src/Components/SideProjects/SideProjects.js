@@ -56,7 +56,7 @@ const SideProjects = () => {
         </a>
         <a
           className={themeColor ? classes.DarkGitHubLink : classes.GitHubLink}
-          href="https://movie-nerd-d5f1a.web.app/"
+          href="https://github.com/epicoding95/movie-nerd"
           target="_blank"
         >
           <GitHubIcon />
@@ -72,19 +72,18 @@ const SideProjects = () => {
         <p
           className={themeColor ? classes.DarkProjectName : classes.ProjectName}
         >
-          Chat Room
+          Kelars Koffee
         </p>
         <img
           style={{ maxHeight: "175x", maxWidth: "175px", marginLeft: "10px" }}
-          src={require("../../assets/images/ChatRoomImage.png")}
+          src={require("../../assets/images/koffeetran.png")}
           alt="codeimage"
         />{" "}
         <p className={classes.ProjectItemInfo}>
           {" "}
-          Chat Room was created to test features that socket.io allows us to
-          use. On this website you log in and immediately get put into a real
-          time chat application with everyone else that is logged in. Built with
-          React/Node.js/Socket.io/Material-UI.
+          My own version of a coffee shop in which users can go through the
+          whole process of signing up to checking out and getting a confirmation
+          email. Built with React, email.js, MongoDB, Node, Express.
         </p>
         <a
           className={themeColor ? classes.DarkGitHubLink : classes.GitHubLink}

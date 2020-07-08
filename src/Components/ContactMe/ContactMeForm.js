@@ -164,11 +164,15 @@ const ContactMeForm = props => {
           onChange={handleChange}
           multiline
           rows="4"
-          InputProps={{
-            style: {
-              color: "#ddd"
-            }
-          }}
+          InputProps={
+            themeColor
+              ? {
+                  style: {
+                    color: "#ddd"
+                  }
+                }
+              : null
+          }
           InputLabelProps={
             themeColor
               ? {

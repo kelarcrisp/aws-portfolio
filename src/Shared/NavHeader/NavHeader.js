@@ -176,7 +176,7 @@ class NavHeader extends React.Component {
                   </IconButton>
                   <IconButton
                     onClick={() =>
-                      window.open("https:twitter.com/theekillaa", "_blank")
+                      window.open("https://twitter.com/theekillaa", "_blank")
                     }
                     className={themeColor ? classes.DarkLink : null}
                     aria-label="TwitterIcon"
