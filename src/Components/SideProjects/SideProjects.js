@@ -86,6 +86,13 @@ const SideProjects = () => {
           email. Built with React, email.js, MongoDB, Node, Express.
         </p>
         <a
+          className={themeColor ? classes.DarkProjectLink : classes.ProjectLink}
+          href="https://kelarskoffee.herokuapp.com/"
+          target="_blank"
+        >
+          <LanguageIcon />
+        </a>
+        <a
           className={themeColor ? classes.DarkGitHubLink : classes.GitHubLink}
           href="https://github.com/epicoding95/chat-room"
           target="_blank"
