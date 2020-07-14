@@ -1,0 +1,48 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.Logo {
+  /* position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  margin-bottom: 20%;
+}
+
+.Logo path:nth-child(1) {
+  stroke-dasharray: 1134px;
+  stroke-dashoffset: 1134px;
+  animation: logoAnimation 2s ease forwards;
+}
+.Logo path:nth-child(2) {
+  stroke-dasharray: 599.9px;
+  stroke-dashoffset: 599.9px;
+  animation: logoAnimation 2s ease forwards;
+}
+.Logo path:nth-child(3) {
+  stroke-dasharray: 543.6px;
+  stroke-dashoffset: 543.6px;
+  animation: logoAnimation 2s ease forwards;
+}
+.Logo path:nth-child(4) {
+  stroke-dasharray: 1008.05px;
+  stroke-dashoffset: 1008.05px;
+  animation: logoAnimation 2s ease forwards;
+}
+.Logo path:nth-child(5) {
+  stroke-dasharray: 2300px;
+  stroke-dashoffset: 2300px;
+  animation: logoAnimation 2s ease forwards;
+}
+
+@keyframes logoAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
