@@ -1,64 +1,58 @@
 .MainContainer{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* flex-direction: column; */
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background:space;
-    /* background:   linear-gradient(
-      rgba(255, 255, 255, 0.45), 
-      rgba(200, 200, 200, 0.55)
-    ),url('../../assets/images/background.png') */
+    overflow-x: hidden;
+    
 }
-.DarkContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background:transparent;
-    color:white;
-}
+
 
 .AboutCardContainer{
-    width: 50%;
-    margin: 15% auto;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10%;
 }
 
 .Name{
-  animation: name 5.5s ease;
-  overflow: hidden;
   white-space: nowrap;
+ color: white;
+  font-size: 4rem;
+  letter-spacing: 3px;
 }
 .Name::after{
    content: 'Front End Developer';
-     margin-top: 25px;
-    font-size: 21px;
+     margin-top: 1.5rem;
     display: block;
-
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
 }
 .Bio{
-animation: Bio 3.5s ease;
-}
+  color: white;
+  width: 80%;
+  font-size: 1.3rem;
 
-@keyframes name{
-  from{
-    width: 0%;
-  }
-  to{
-    width: 100%;
-  }
 }
-@media(max-width: 500px){
+.Links{
+  text-align: center;
+
+}
+.Link{
+  color: white;
+  background-color: white;
+
+}
+/* @media(max-width: 500px){
   .MainContainer{
     width: 250px;
     margin-left: 15%;
   }
-}
+} */
 
 
 

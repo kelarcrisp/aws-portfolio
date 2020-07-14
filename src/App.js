@@ -16,7 +16,8 @@ const App = () => {
 
   useEffect(() => {
     let scene, camera, renderer, starGeo, stars;
-
+    init();
+    animate();
     function init() {
       scene = new THREE.Scene();
       camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 1, 1000);
@@ -75,7 +76,7 @@ const App = () => {
     <BrowserRouter>
       <>
         <ThemeContext.Provider value={{ themeColor, setThemeColor }}>
-          <NavHeader />
+          {/* <NavHeader /> */}
           {/* <MiniDrawer /> */}
           <Route path='/' exact component={HomePage} />
           {/* <Route path='/Projects' component={SideProjects} />

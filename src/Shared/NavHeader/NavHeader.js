@@ -1,11 +1,7 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
-import IconButton from '@material-ui/core/IconButton';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
+
 import MyTab from '../Tabs/Tab';
 import { useHistory } from "react-router-dom";
 import { ThemeContext } from '../contexts/ThemeContext';
@@ -144,34 +140,7 @@ class NavHeader extends React.Component {
 
                                 />
                             </div>
-                            <div className={classes.Links} >
-                                <IconButton
-                                    onClick={() => window.open('https://github.com/epicoding95', '_blank')}
-                                    className={themeColor ? classes.DarkLink : null}
-                                    aria-label="GitHubIcon">
-                                    <GitHubIcon />
-                                </IconButton>
-                                <IconButton
-                                    onClick={() => window.open('https://www.linkedin.com/in/kelarcrisp/', '_blank')}
-                                    className={themeColor ? classes.DarkLink : null}
-                                    aria-label="LinkedInIcon">
-                                    < LinkedInIcon />
-                                </IconButton>
-                                <IconButton
 
-                                    onClick={() => window.open('https://www.instagram.com/theekilla/', '_blank')}
-                                    className={themeColor ? classes.DarkLink : null}
-                                    aria-label="InstagramIcon">
-                                    < InstagramIcon />
-                                </IconButton>
-                                <IconButton
-
-                                    onClick={() => window.open('https:twitter.com/theekillaa', '_blank')}
-                                    className={themeColor ? classes.DarkLink : null}
-                                    aria-label="TwitterIcon">
-                                    < TwitterIcon />
-                                </IconButton>
-                            </div>
                         </Paper>
                     </div>
                 )
