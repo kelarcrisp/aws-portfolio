@@ -11,7 +11,7 @@ const HomePage = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowAbout(true);
-    }, 5000);
+    }, 3300);
   }, []);
 
   const showWhat = showAbout ? <About /> : <LandingPageSvg />;
