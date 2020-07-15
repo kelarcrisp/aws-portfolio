@@ -8,8 +8,6 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import * as THREE from "three";
 const About = () => {
-  const { themeColor } = useContext(ThemeContext);
-
   useEffect(() => {
     let scene, camera, renderer, starGeo, stars;
     init();
@@ -71,10 +69,7 @@ const About = () => {
   }, []);
 
   return (
-    <div
-      id="About"
-      className={themeColor ? classes.DarkContainer : classes.MainContainer}
-    >
+    <div id="About" className={classes.MainContainer}>
       <div className={classes.AboutCardContainer}>
         <h1 className={classes.Name}>Kelar Crisp </h1>
 

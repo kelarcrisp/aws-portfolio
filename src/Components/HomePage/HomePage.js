@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import classes from "./HomePage.module.css";
 import WorkInfoCard from "./WorkInfoCard/WorkInfoCard";
 import { ThemeContext } from "../../Shared/contexts/ThemeContext";
@@ -7,18 +7,12 @@ import ContactMeForm from "../ContactMe/ContactMeForm";
 import LandingPageSvg from "../landingPageSvg/LandingPageSvg";
 import About from "../About/About";
 const HomePage = () => {
-  const [showAbout, setShowAbout] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setShowAbout(true);
-    }, 3300);
-  }, []);
+  const homePageRef = useRef();
 
-  const showWhat = showAbout ? <About /> : <LandingPageSvg />;
   return (
     <div>
-      {showWhat}
-      <WorkInfoCard />
+      <About />
+      {/* <WorkInfoCard /> */}
       <SideProjects />
       <ContactMeForm />
     </div>

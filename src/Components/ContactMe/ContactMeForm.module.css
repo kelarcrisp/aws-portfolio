@@ -1,80 +1,77 @@
-
-.ContactContainer{ 
-      height: 100%;  
-    width: 100%;
-    background: space;
-    box-sizing: border-box;
-    overflow: hidden;
-    animation: Container 2.5s ease;
-
-}   
+.ContactContainer {
+  height: 100%;
+  width: 100%;
+  background: space;
+  box-sizing: border-box;
+  overflow: hidden;
+  animation: Container 2.5s ease;
+}
 .DarkContactContainer {
-    margin-right: 0;
-    padding: 60px;
-    height: 80%;      
-    width: 100%;
-    background: #333;;
-    box-sizing: border-box;
+  margin-right: 0;
+  padding: 60px;
+  height: 80%;
+  width: 100%;
+  background: #333;
+  box-sizing: border-box;
 }
-.FormInfoContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2% 0% 10% 0%;
-
+.FormInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 0% 10% 0%;
 }
-.TextField{
-    width: 40%;
-    height: 70px;
-}
-
-
-.ShowSentMessage{
-    margin-top: 2%;
-    animation: fadeOut 3s;
+.TextField {
+  width: 40%;
+  height: 70px;
 }
 
-.ShowDarkSentMessage{
-    margin-top: 2%;
-    animation: fadeOut 3s;
-    color: #ddd;
+.ShowSentMessage {
+  margin-top: 2%;
+  animation: fadeOut 3s;
 }
 
-.ContactHeader{
-    text-align: center;
-   margin-top: 50px;
-}
-.DarkContactHeader{
-    text-align: center;
-    margin-top: 50px;
-    color:white;
+.ShowDarkSentMessage {
+  margin-top: 2%;
+  animation: fadeOut 3s;
+  color: #ddd;
 }
 
+.ContactHeader {
+  text-align: center;
+  margin-top: 50px;
+}
+.DarkContactHeader {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
 
 @keyframes fadeOut {
-    from {top: 0px;}
-  to {top: 200px;}
-} 
-
-@media (max-width: 400px){
-    .ContactContainer{
-        width: 450px;
-        margin-left: 0%;
-    }
-   
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
 }
 
-@keyframes Container{
-from {
-  background: space;
-  opacity: 0;
-  transform: translateX(-100%)
+@media (max-width: 400px) {
+  .ContactContainer {
+    width: 400px;
+  }
 }
 
-to {
-   background:space;
-  opacity: 1;
-   transform: translateX(0)
-}
+@keyframes Container {
+  from {
+    background: space;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    background: space;
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

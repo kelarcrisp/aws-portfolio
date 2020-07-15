@@ -8,24 +8,33 @@ import About from "./Components/About/About";
 import ContactForm from "./Components/ContactMe/ContactMeForm";
 import MiniDrawer from "./Shared/SideDrawer/SideDrawer";
 import { ThemeContext } from "./Shared/contexts/ThemeContext";
-
+import LandingPageSvg from "./Components/landingPageSvg/LandingPageSvg";
 const App = () => {
-  const [themeColor, setThemeColor] = useState(false);
+  const [showHomeScreen, setShowHomeScreen] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setShowHomeScreen(true);
+    }, 2800);
+  }, []);
 
   return (
     <BrowserRouter>
-      <>
-        <ThemeContext.Provider value={{ themeColor, setThemeColor }}>
+      <div>
+        <ThemeContext.Provider>
           {/* <NavHeader /> */}
           {/* <MiniDrawer /> */}
-          <Route path="/" exact component={HomePage} />
+          <Route
+            path="/"
+            exact
+            component={showHomeScreen ? HomePage : LandingPageSvg}
+          />
           {/* <Route path='/Projects' component={SideProjects} />
             <Route path='/About' component={About} />
             <Route path='/ContactForm' component={ContactForm} /> */}
           {/* <Route path='/' render={() => <div>page not found!</div>
           } /> */}
         </ThemeContext.Provider>
-      </>
+      </div>
     </BrowserRouter>
   );
 };

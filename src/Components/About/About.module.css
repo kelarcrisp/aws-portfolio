@@ -1,16 +1,13 @@
-.MainContainer{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    
+.MainContainer {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
-
-.AboutCardContainer{
+.AboutCardContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,83 +15,42 @@
   margin-bottom: 10%;
 }
 
-.Name{
+.Name {
   white-space: nowrap;
- color: white;
+  color: white;
   font-size: 4rem;
   letter-spacing: 3px;
 }
-.Name::after{
-   content: 'Front End Developer';
-     margin-top: 1.5rem;
-    display: block;
+.Name::after {
+  content: "Front End Developer";
+  margin-top: 1.5rem;
+  display: block;
   font-size: 1.5rem;
   text-align: center;
   letter-spacing: 2px;
 }
-.Bio{
+.Bio {
   color: white;
   width: 80%;
   font-size: 1.3rem;
-
 }
-.Links{
+.Links {
   text-align: center;
-
 }
-.Link{
+.Link {
   color: white;
   background-color: white;
-
 }
-/* @media(max-width: 500px){
-  .MainContainer{
-    width: 250px;
-    margin-left: 15%;
+@media (max-width: 400px) {
+  .MainContainer {
+    width: 47%;
+    padding-right: 12%;
   }
-} */
-
-
-
-/* @keyframes Name{
-from {
-   background:space;
-  opacity: 0;
-  transform: translateY(-200%)
+  .Name {
+    text-align: center;
+  }
+  .Bio {
+    width: 47%;
+    text-align: center;
+  }
 }
-
-to {
-    background:space;
-  opacity: 1;
-   transform: translateY(0)
-}
-}
-
-
-@keyframes Title{
-from {
-   background:space;
-  opacity: 0;
-  transform: translateX(-200%)
-}
-
-to {
-    background:space;
-  opacity: 1;
-   transform: translateX(0)
-}
-}
-
-@keyframes Bio{
-from {
-   background:space;
-  opacity: 0;
-  transform: translateX(-200%)
-}
-
-to {
-    background:space;
-  opacity: 1;
-   transform: translateX(0)
-}
-} */
