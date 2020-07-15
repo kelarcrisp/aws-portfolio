@@ -35,7 +35,7 @@ const SideProjects = () => {
             </a>
             <a
               className={classes.GitHubLink}
-              href="https://movie-nerd-d5f1a.web.app/"
+              href="https://github.com/epicoding95/movie-nerd"
               target="_blank"
             >
               <GitHubIcon />
