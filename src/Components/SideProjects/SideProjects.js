@@ -53,6 +53,13 @@ const SideProjects = () => {
 
       <div className={classes.SideProjectItemSecond}>
         {" "}
+        <div className={classes.ImageContainer}>
+          <img
+            style={{ maxHeight: "375x", maxWidth: "375px" }}
+            src={require("../../assets/images/koffeetran.png")}
+            alt="codeimage"
+          />
+        </div>
         <div className={classes.ProjectItemInfo}>
           <p className={classes.ProjectName}> Kelar's Koffee</p>
           <p className={classes.ProjectItemBio}>
@@ -77,13 +84,6 @@ const SideProjects = () => {
               <GitHubIcon />
             </a>{" "}
           </div>
-        </div>
-        <div className={classes.ImageContainer}>
-          <img
-            style={{ maxHeight: "375x", maxWidth: "375px" }}
-            src={require("../../assets/images/koffeetran.png")}
-            alt="codeimage"
-          />
         </div>
       </div>
 
@@ -124,6 +124,13 @@ const SideProjects = () => {
       </div>
       <div className={classes.SideProjectItemSecond}>
         {" "}
+        <div className={classes.ImageContainer}>
+          <img
+            style={{ maxHeight: "375x", maxWidth: "375px" }}
+            src={require("../../assets/images/trellotrans.png")}
+            alt="codeimage"
+          />
+        </div>
         <div className={classes.ProjectItemInfo}>
           <p className={classes.ProjectName}> Reda's Forgetful List v2</p>
           <p className={classes.ProjectItemBio}>
@@ -146,13 +153,6 @@ const SideProjects = () => {
               <GitHubIcon />
             </a>{" "}
           </div>
-        </div>
-        <div className={classes.ImageContainer}>
-          <img
-            style={{ maxHeight: "375x", maxWidth: "375px" }}
-            src={require("../../assets/images/trellotrans.png")}
-            alt="codeimage"
-          />
         </div>
       </div>
     </div>
