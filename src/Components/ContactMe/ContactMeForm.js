@@ -3,14 +3,10 @@ import TextField from "@material-ui/core/TextField";
 import classes from "./ContactMeForm.module.css";
 import Button from "@material-ui/core/Button";
 import SendIcon from "@material-ui/icons/Send";
-import axios from "axios";
-import { ThemeContext } from "../../Shared/contexts/ThemeContext";
 import AOS from "aos";
 import emailjs from "emailjs-com";
 import "aos/dist/aos.css";
-
-const ContactMeForm = props => {
-  const { themeColor } = useContext(ThemeContext);
+const ContactMeForm = () => {
   const [email, setEmail] = useState("");
   const [title, setTitle] = useState("");
   const [message, setMessage] = useState("");
@@ -31,7 +27,6 @@ const ContactMeForm = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     const emailToSend = {
       from_name: email,
       to_name: "kelcrisp007@icloud.com",
@@ -45,27 +40,7 @@ const ContactMeForm = props => {
       .send(serviceId, templateId, emailToSend, userId)
       .then(res => "woo")
       .catch(err => console.log(err, "err"));
-
-    const dataToSubmit = {
-      email: email,
-      title: title,
-      message: message
-    };
-    setIsSent(true);
-    setEmail("");
-    setTitle("");
-    setMessage("");
-    axios
-      .post(
-        "https://kelar-portfolio.firebaseio.com/formData.json",
-        dataToSubmit
-      )
-      .then(response => console.log(response, "its been sent"));
-    // axios.post('/api/form', dataToSubmit).then(() => console.log('sent to server!')
-    // ).catch(err => err, 'request couldnt be sent!')
-    console.log("data sent", dataToSubmit);
   };
-
   let showSentMessage = null;
   if (isSent) {
     showSentMessage = "Your email has successfully been sent!";
@@ -80,15 +55,9 @@ const ContactMeForm = props => {
     <div
       id="ContactMe"
       data-aos="fade-right"
-      className={
-        themeColor ? classes.DarkContactContainer : classes.ContactContainer
-      }
+      className={classes.ContactContainer}
     >
-      <div
-        className={
-          themeColor ? classes.DarkContactHeader : classes.ContactHeader
-        }
-      >
+      <div className={classes.ContactHeader}>
         Fill out the form to directly contact me by Email!
       </div>
       <form
@@ -98,24 +67,6 @@ const ContactMeForm = props => {
       >
         <TextField
           className={classes.TextField}
-          InputProps={
-            themeColor
-              ? {
-                  style: {
-                    color: "#ddd"
-                  }
-                }
-              : null
-          }
-          InputLabelProps={
-            themeColor
-              ? {
-                  style: {
-                    color: "#ddd"
-                  }
-                }
-              : null
-          }
           type="email"
           id="email"
           label="Your Email "
@@ -125,24 +76,6 @@ const ContactMeForm = props => {
         />
         <TextField
           className={classes.TextField}
-          InputProps={
-            themeColor
-              ? {
-                  style: {
-                    color: "#ddd"
-                  }
-                }
-              : null
-          }
-          InputLabelProps={
-            themeColor
-              ? {
-                  style: {
-                    color: "#ddd"
-                  }
-                }
-              : null
-          }
           id="title"
           label="Title"
           variant="outlined"
@@ -152,36 +85,12 @@ const ContactMeForm = props => {
         `
         <TextField
           className={classes.TextField}
-          InputProps={
-            themeColor
-              ? {
-                  style: {
-                    color: "#ddd"
-                  }
-                }
-              : null
-          }
           onChange={handleChange}
           multiline
           rows="4"
-          InputProps={
-            themeColor
-              ? {
-                  style: {
-                    color: "#ddd"
-                  }
-                }
-              : null
-          }
-          InputLabelProps={
-            themeColor
-              ? {
-                  style: {
-                    color: "#ddd"
-                  }
-                }
-              : null
-          }
+          onChange={handleChange}
+          multiline
+          rows="4"
           id="message"
           label="Message"
           variant="outlined"
@@ -196,13 +105,8 @@ const ContactMeForm = props => {
         >
           Send!
         </Button>
-        <div
-          className={
-            !themeColor ? classes.ShowSentMessage : classes.ShowDarkSentMessage
-          }
-        >
-          {showSentMessage}
-        </div>
+        <div className={classes.ShowSentMessage}>{showSentMessage}</div>
+        <div className={classes.ShowSentMessage}>{showSentMessage}</div>
       </form>
     </div>
   );

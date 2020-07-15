@@ -1,148 +1,88 @@
-.SideProjectsContainer {
-   position: relative;
-    display:flex;
-    flex-direction: column;
+.SideProjectItemFirst {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+.SideProjectItemSecond {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5;
 }
 
-.DarkSideProjectsContainer{
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    background: #333;
-    color:white;
+.ProjectItemInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-top: 7rem;
 }
 
-.SideProjectItem{
-    display: flex;
-    flex-direction: column;
-    height: 175px;
-    width: 80%;
-    border:1px solid gray;
-    box-shadow: 0 0 4px #ccc;
-    border-radius: 5px;
-    margin: 5px 5px 5px 12%;
+.ProjectName {
+  width: 50%;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
 }
-.DarkProjectItem{
-     display: flex;
-    flex-direction: column;
-    height: 175px;
-    width: 80%;
-    border:1px solid gray;
-    box-shadow: 0 0 4px #ccc;
-    border-radius: 5px;
-    margin: 5px 5px 5px 12%;
-    color: white;
-    background: #333;
+.ProjectItemBio {
+  width: 65%;
+  font-size: 1.5rem;
+  /* background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(81, 203, 238, 1) 50%
+  );
+  background-size: 200%;
+  background-position: 0 0;
+  transition: 0.8s ease-in-out; */
 }
-.DarkSideProjectItem,
-.SideProjectItem >a {
-    margin-left: 25px;
+/* .ProjectItemBio:hover {
+  transform: translateY(-3px) scale(1.01);
+  background-position: -100% 0;
+} */
+.LinkContainer {
+  display: flex;
 }
-
-.DarkProjectItem .ProjectItemInfo,
-.SideProjectItem .ProjectItemInfo{
-   position: absolute;
-  display: inline-block;
-  left: 22%;
-  top:20%;
+.LinkContainer > a {
+  padding: 12px;
+  width: 24px;
+  color: black;
 }
-
-.ProjectItemInfo{
-     background: linear-gradient(to right, rgba(255,255,255,0) 50%, rgba(81, 203, 238,1.0) 50%);
-     background-size: 200%;
-    background-position: 0 0;
-    display: inline;
-    transition: .8s ease-in-out;
-    font-family: 'Dosis', sans-serif;
-    margin-left: 40px;
-    line-height: 1.4;
-    }
-       
-.ProjectItemInfo:hover{ 
-     transform: translateY(-3px) scale(1.01);
-    background-position: -100% 0; 
-
+.ImageContainer {
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  padding-top: 12rem;
 }
 
-
-.ProjectName{
- position: relative;
-    color:black;;
-    text-decoration: none;
-    padding-left: 20px;
-    white-space: nowrap;
-    font-size:1.2rem;
-    margin: 0;
-}
-.DarkProjectName{
-     position: relative;
-    color:white;
-    text-decoration: none;
-    padding-left: 20px;
-    white-space: nowrap;
-    font-size:1.2rem;
-    margin: 0;
-}
-.DarkProjectLink{
-     position: absolute;
-    left: 53%;
-    bottom: 30px;  
- text-decoration: none;
- color:white;
-}
-.ProjectLink{
-    position: absolute;
-    left: 53%;
-    bottom: 30px;  
- text-decoration: none;
- color:gray;
+@media (max-width: 1175px) {
+  .DarkProjectLink,
+  .ProjectLink {
+    bottom: 12px;
+  }
+  .DarkGitHubLink,
+  .GitHubLink {
+    bottom: 12px;
+  }
 }
 
-.GitHubLink{
-    position: absolute;
-    left: 57%;
-    bottom: 30px; 
-     text-decoration: none;
- color:gray;
+@media (max-width: 1000px) {
+  .DarkProjectLink,
+  .ProjectLink {
+    top: 5px;
+  }
+  .DarkGitHubLink,
+  .GitHubLink {
+    top: 5px;
+  }
 }
-.DarkGitHubLink{
-      position: absolute;
-    left: 57%;
-    bottom: 30px; 
-     text-decoration: none;
- color:white;
+@media (max-width: 380px) {
+  .ProjectItemBio {
+    font-size: 1.35rem;
+  }
 }
-
-@media(max-width: 1175px){
-    .DarkProjectLink,
-    .ProjectLink{
-bottom: 12px;
-    }
-   .DarkGitHubLink,
-    .GitHubLink{
-bottom: 12px;
-    }
-}
-
-@media(max-width: 1000px){
-    .DarkProjectLink,
-    .ProjectLink{
-top: 5px;
-    }
-    .DarkGitHubLink,
-    .GitHubLink{
-top:5px;
-
-    }
-}
-
-
-
-
-
-
-
-
-
-
-

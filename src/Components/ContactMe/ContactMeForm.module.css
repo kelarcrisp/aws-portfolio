@@ -57,13 +57,10 @@
 }
 
 @media (max-width: 400px) {
-  .ContactContainer {
-    width: 450px;
-    margin-left: 0%;
-  }
   .ContactHeader,
   .DarkContactContainer {
     margin-left: 0.75rem;
+    width: 400px;
   }
 }
 

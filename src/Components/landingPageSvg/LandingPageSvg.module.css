@@ -1,0 +1,80 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.Logo {
+  /* position: absolute;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* margin-bottom: 20%; */
+  animation: fill 0.5s ease forwards 2.6s;
+}
+
+.Logo path:nth-child(1) {
+  color: black;
+  stroke-dasharray: 1134px;
+  stroke-dashoffset: 1134px;
+  animation: logoAnimation 2.5s ease-in-out forwards;
+  /* logoSlideUp 1s ease forwards 3.4s; */
+}
+.Logo path:nth-child(2) {
+  color: black;
+  stroke-dasharray: 599.9px;
+  stroke-dashoffset: 599.9px;
+  animation: logoAnimation 2.5s ease-in-out forwards;
+  /* logoSlideUp 1s ease forwards 3s; */
+}
+.Logo path:nth-child(3) {
+  color: black;
+  stroke-dasharray: 543.6px;
+  stroke-dashoffset: 543.6px;
+  animation: logoAnimation 2.5s ease-in-out forwards;
+  /* logoSlideUp 1s ease forwards 3s; */
+}
+.Logo path:nth-child(4) {
+  color: black;
+  stroke-dasharray: 1008.05px;
+  stroke-dashoffset: 1008.05px;
+  animation: logoAnimation 2.5s ease-in-out forwards;
+  /* logoSlideUp 1s ease forwards 3s; */
+}
+.Logo path:nth-child(5) {
+  color: black;
+  stroke-dasharray: 2300px;
+  stroke-dashoffset: 2300px;
+  animation: logoAnimation 2.5s ease-in-out forwards;
+  /* logoSlideUp 1s ease forwards 3s; */
+}
+
+@keyframes logoAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* @keyframes logoSlideUp {
+  to {
+    transform: translateY(-100%);
+  }
+} */
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+
+@media (max-width: 400px) {
+  .Container {
+    width: 50%;
+  }
+}
