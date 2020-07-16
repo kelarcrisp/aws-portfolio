@@ -38,16 +38,22 @@ const ContactMeForm = () => {
     const userId = "user_dyzjhIcsAc5ZmpmGA2Kif";
     emailjs
       .send(serviceId, templateId, emailToSend, userId)
-      .then(res => "woo")
+      .then(res => {
+        setEmail("");
+        setTitle("");
+        setMessage("");
+        setIsSent(true);
+      })
       .catch(err => console.log(err, "err"));
   };
+
   let showSentMessage = null;
   if (isSent) {
     showSentMessage = "Your email has successfully been sent!";
   }
   if (isSent) {
     setTimeout(() => {
-      setIsSent(null);
+      setIsSent(false);
     }, 2500);
   }
 
@@ -105,7 +111,6 @@ const ContactMeForm = () => {
         >
           Send!
         </Button>
-        <div className={classes.ShowSentMessage}>{showSentMessage}</div>
         <div className={classes.ShowSentMessage}>{showSentMessage}</div>
       </form>
     </div>
