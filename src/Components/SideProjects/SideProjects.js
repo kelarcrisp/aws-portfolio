@@ -6,6 +6,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
+import MovieRecording from "../../assets/videos/movieRecording.mov";
+import KoffeeRecording from "../../assets/videos/koffeeRecording.mov";
+import JobsRecording from "../../assets/videos/jobsRecording.mov";
+import TrelloRecording from "../../assets/videos/trelloRecording.mov";
 const SideProjects = () => {
   AOS.init({
     delay: 200
@@ -43,22 +47,28 @@ const SideProjects = () => {
           </div>
         </div>
         <div className={classes.ImageContainer}>
-          <img
+          <video width="375px" height="375px" controls>
+            <source src={MovieRecording} type="video/mp4" />
+          </video>
+          {/* <img
             style={{ maxHeight: "375x", maxWidth: "375px" }}
             src={require("../../assets/images/movieNerdImage.png")}
             alt="codeimage"
-          />
+          /> */}
         </div>
       </div>
 
       <div className={classes.SideProjectItemSecond}>
         {" "}
         <div className={classes.ImageContainer}>
-          <img
+          <video width="375px" height="375px" controls>
+            <source src={KoffeeRecording} type="video/mp4" />
+          </video>
+          {/* <img
             style={{ maxHeight: "375x", maxWidth: "375px" }}
             src={require("../../assets/images/koffeetran.png")}
             alt="codeimage"
-          />
+          /> */}
         </div>
         <div className={classes.ProjectItemInfo}>
           <p className={classes.ProjectName}> Kelar's Koffee</p>
@@ -119,21 +129,27 @@ const SideProjects = () => {
           </div>
         </div>
         <div className={classes.ImageContainer}>
-          <img
+          <video width="375px" height="375px" controls>
+            <source src={JobsRecording} type="video/mp4" />
+          </video>
+          {/* <img
             style={{ maxHeight: "375x", maxWidth: "375px" }}
             src={require("../../assets/images/JobsWebsiteImage.png")}
             alt="codeimage"
-          />
+          /> */}
         </div>
       </div>
       <div className={classes.SideProjectItemSecond}>
         {" "}
         <div className={classes.ImageContainer}>
-          <img
+          <video width="375px" height="375px" controls>
+            <source src={TrelloRecording} type="video/mp4" />
+          </video>
+          {/* <img
             style={{ maxHeight: "375x", maxWidth: "375px" }}
             src={require("../../assets/images/trellotrans.png")}
             alt="codeimage"
-          />
+          /> */}
         </div>
         <div className={classes.ProjectItemInfo}>
           <p className={classes.ProjectName}> Reda's Forgetful List v2</p>
