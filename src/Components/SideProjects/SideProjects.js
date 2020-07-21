@@ -67,7 +67,12 @@ const SideProjects = () => {
             whole process of signing up to checking out and getting a
             confirmation email. Built with React, email.js, MongoDB, Node,
             Express.
+         
           </p>{" "}
+             <p className={classes.SlowWebsiteTag}>
+              Please allow up to 20-30 seconds to load, the server is hosted on
+              a free plan so it take's a little bit of time to be served :)
+            </p>
           <div className={classes.LinkContainer}>
             <a
               className={classes.ProjectLink}

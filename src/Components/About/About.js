@@ -40,7 +40,6 @@ const About = () => {
       }
       let image = require("../../assets/images/star.png");
       let sprite = new THREE.TextureLoader().load(image);
-      console.log(sprite);
       let starMaterial = new THREE.PointsMaterial({
         color: 0xaaaaaa,
         size: 0.7,

@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import NavHeader from "./Shared/NavHeader/NavHeader";
 import HomePage from "./Components/HomePage/HomePage";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import SideProjects from "./Components/SideProjects/SideProjects";
-import About from "./Components/About/About";
-import ContactForm from "./Components/ContactMe/ContactMeForm";
-import MiniDrawer from "./Shared/SideDrawer/SideDrawer";
+import { BrowserRouter, Route } from "react-router-dom";
+
 import { ThemeContext } from "./Shared/contexts/ThemeContext";
 import LandingPageSvg from "./Components/landingPageSvg/LandingPageSvg";
 const App = () => {
