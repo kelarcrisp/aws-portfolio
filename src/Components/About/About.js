@@ -22,8 +22,10 @@ const About = () => {
       camera.position.z = 1;
       camera.rotation.x = Math.PI / 2;
       renderer = new THREE.WebGLRenderer();
-      renderer.setSize(window.innerWidth, window.innerHeight);
+      //instead of window.inner width it should be something different..
+
       const element = document.getElementById("About");
+      renderer.setSize(element.clientWidth, element.clientHeight);
       element.classList.add("canvas");
       element.append(renderer.domElement);
 
