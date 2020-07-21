@@ -56,13 +56,13 @@
   }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .ContactHeader,
   .DarkContactContainer {
     margin-left: 0.75rem;
     width: 400px;
   }
-}
+} */
 
 @keyframes Container {
   from {
