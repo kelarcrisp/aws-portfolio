@@ -6,12 +6,12 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { ThemeContext } from "./Shared/contexts/ThemeContext";
 import LandingPageSvg from "./Components/landingPageSvg/LandingPageSvg";
 const App = () => {
-  const [showHomeScreen, setShowHomeScreen] = useState(false);
-  useEffect(() => {
-    setTimeout(() => {
-      setShowHomeScreen(true);
-    }, 2800);
-  }, []);
+  const [showHomeScreen, setShowHomeScreen] = useState(true);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowHomeScreen(true);
+  //   }, 2800);
+  // }, []);
 
   return (
     <BrowserRouter>

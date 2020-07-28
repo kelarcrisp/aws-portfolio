@@ -1,56 +1,53 @@
-.HomePageContainer{
-   position: relative;
-    height: 100%;
-    width: 100%;
-    padding: 40px;
-    box-sizing: border-box;
-    animation: HomePageContainer 2.5s;
+.HomePageContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  animation: HomePageContainer 2.5s;
 }
 
-
-.HomePageContainerTwo{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    /* background:   linear-gradient(
+.HomePageContainerTwo {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* background:   linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.45), 
       rgba(200, 200, 200, 0.55)
     ),url('../../assets/images/background.png'); */
-    padding: 40px;
-    box-sizing: border-box;
- 
+  padding: 40px;
+  box-sizing: border-box;
 }
 .DarkHomePageContainer {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: #333;
-    padding: 40px;
-    box-sizing: border-box;
-    animation: HomePageContainer 2.5s;
-}
-
-
-.DarkHomePageContainerTwo{
   position: relative;
-    height: 100%;
-    width: 100%;
-    background: #333;
-    padding: 40px;
-    box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  padding: 40px;
+  box-sizing: border-box;
+  animation: HomePageContainer 2.5s;
 }
 
-@keyframes HomePageContainer{
-from {
-   background: linear-gradient(90deg, #fdfbfb,  #ebedee);
-  opacity: 0;
-  transform: translateY(-100%)
+.DarkHomePageContainerTwo {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #333;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-to {
-   background: linear-gradient(90deg, #fdfbfb,  #ebedee);
-  opacity: 1;
-   transform: translateY(0)
-}
+@keyframes HomePageContainer {
+  from {
+    background: linear-gradient(90deg, #fdfbfb, #ebedee);
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    background: linear-gradient(90deg, #fdfbfb, #ebedee);
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

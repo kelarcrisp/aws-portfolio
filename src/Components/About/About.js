@@ -6,6 +6,7 @@ import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import * as THREE from "three";
 import classes from "./About.module.css";
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 const About = () => {
   useEffect(() => {
     let scene, camera, renderer, starGeo, stars;
@@ -68,6 +69,11 @@ const About = () => {
     init();
   }, []);
 
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
   return (
     <div id="About" className={classes.MainContainer}>
       <div className={classes.AboutCardContainer}>
@@ -120,6 +126,9 @@ const About = () => {
             <TwitterIcon />
           </IconButton>
         </div>
+      </div>
+      <div className={classes.BringUp}>
+        <ArrowUpwardIcon onClick={topFunction} />
       </div>
     </div>
   );
