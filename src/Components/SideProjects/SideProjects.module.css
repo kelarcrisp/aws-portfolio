@@ -40,6 +40,10 @@
   background-position: 0 0;
   transition: 0.8s ease-in-out; */
 }
+.ProjectItemBio span {
+  color: green;
+  font-size: 0.95rem;
+}
 /* .ProjectItemBio:hover {
   transform: translateY(-3px) scale(1.01);
   background-position: -100% 0;

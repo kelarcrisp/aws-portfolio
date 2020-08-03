@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import classes from "./LandingPageSvg.module.css";
 const LandingPageSvg = () => {
-  useEffect(() => {
-    const logo = document.querySelectorAll("#LogoContainer path");
-    for (let i = 0; i < logo.length; i++) {
-      console.log(`letter ${i} is ${logo[i].getTotalLength()}`);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const logo = document.querySelectorAll("#LogoContainer path");
+  //   for (let i = 0; i < logo.length; i++) {
+  //     console.log(`letter ${i} is ${logo[i].getTotalLength()}`);
+  //   }
+  // }, []);
   return (
     <div className={classes.Container} id="LogoContainer">
       <svg
