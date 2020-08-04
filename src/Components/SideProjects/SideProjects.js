@@ -102,12 +102,12 @@ const SideProjects = () => {
       <div className={classes.SideProjectItemFirst}>
         {" "}
         <div className={classes.ProjectItemInfo}>
-          <p className={classes.ProjectName}>Where's My Package</p>
+          <p className={classes.ProjectName}>Where's My Package ?</p>
           <p className={classes.ProjectItemBio}>
-            Where's My Package was created to centralize being able to track
-            your package through one website for the top package shipping
-            companies. All you need is your current tracking Id and you can find
-            out where exactly in the country your package is.<br></br>{" "}
+            Wheres My Package was created to centralize being able to track your
+            package through one website for the top package shipping companies.
+            All you need is your current tracking Id and you can find out
+            exactly where in the country your package is.<br></br>{" "}
             <span>(still working on fedex and international tracking)</span>
           </p>{" "}
           <div className={classes.LinkContainer}>
