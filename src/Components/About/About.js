@@ -82,7 +82,10 @@ const About = () => {
         <p className={classes.Bio}>
           Hello! I'm Kelar, a Seattle based software engineer with a passion for
           all things front-end. I currently spend most of my time building
-          things with React 🤖
+          things with React{" "}
+          <span role="img" aria-label="emoji">
+            🤖
+          </span>
         </p>
         <div className={classes.Links}>
           <IconButton
@@ -90,44 +93,49 @@ const About = () => {
             onClick={() =>
               window.open("https://github.com/epicoding95", "_blank")
             }
-            className={classes.Link}
             aria-label="GitHubIcon"
+            className={classes.Link}
           >
+            <div className={classes.LinkHover}>Github</div>
             <GitHubIcon />
           </IconButton>
           <IconButton
             style={{ color: "white" }}
+            className={classes.Link}
             onClick={() =>
               window.open("https://www.linkedin.com/in/kelarcrisp/", "_blank")
             }
-            className={classes.Link}
             aria-label="LinkedInIcon"
           >
+            <div className={classes.LinkHover}>LinkedIn</div>
             <LinkedInIcon />
           </IconButton>
           <IconButton
             style={{ color: "white" }}
+            className={classes.Link}
             onClick={() =>
               window.open("https://www.instagram.com/theekilla/", "_blank")
             }
-            className={classes.Link}
             aria-label="InstagramIcon"
           >
+            <div className={classes.LinkHover}>Instagram</div>
             <InstagramIcon />
           </IconButton>
           <IconButton
             style={{ color: "white" }}
+            className={classes.Link}
             onClick={() =>
               window.open("https:twitter.com/theekillaa", "_blank")
             }
-            className={classes.Link}
             aria-label="TwitterIcon"
           >
+            <div className={classes.LinkHover}>Twitter</div>
             <TwitterIcon />
           </IconButton>
         </div>
       </div>
       <div className={classes.BringUp}>
+        Back to top
         <ArrowUpwardIcon onClick={topFunction} />
       </div>
     </div>

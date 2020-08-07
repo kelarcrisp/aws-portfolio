@@ -39,9 +39,18 @@
 .Links {
   text-align: center;
 }
+.LinkHover {
+  position: absolute;
+  top: -15px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  display: none;
+}
 .Link {
   color: white;
-  background-color: white;
+}
+.Link:hover div.LinkHover {
+  display: block;
 }
 .BringUp {
   position: fixed;
