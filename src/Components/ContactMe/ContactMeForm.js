@@ -93,10 +93,9 @@ const ContactMeForm = () => {
           className={classes.TextField}
           onChange={handleChange}
           multiline
-          rows="4"
+          rows="3"
           onChange={handleChange}
           multiline
-          rows="4"
           id="message"
           label="Message"
           variant="outlined"

@@ -72,3 +72,15 @@
     text-align: center;
   }
 } */
+
+@media (min-width: 370px) {
+  * {
+    overflow-x: hidden;
+  }
+  .MainContainer {
+    max-width: 100vw;
+  }
+  .canvas {
+    width: 100%;
+  }
+}

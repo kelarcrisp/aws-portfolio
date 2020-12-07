@@ -58,16 +58,6 @@ const SideProjects = () => {
 
       <div className={classes.SideProjectItemSecond}>
         {" "}
-        <div className={classes.ImageContainer}>
-          <video width="375px" height="275px" controls>
-            <source src={KoffeeRecording} type="video/mp4" />
-          </video>
-          {/* <img
-            style={{ maxHeight: "375x", maxWidth: "375px" }}
-            src={require("../../assets/images/koffeetran.png")}
-            alt="codeimage"
-          /> */}
-        </div>
         <div className={classes.ProjectItemInfo}>
           <p className={classes.ProjectName}> Kelar's Koffee</p>
           <p className={classes.ProjectItemBio}>
@@ -94,8 +84,13 @@ const SideProjects = () => {
               target="_blank"
             >
               <GitHubIcon />
-            </a>{" "}
+            </a>
           </div>
+        </div>
+        <div className={classes.ImageContainer}>
+          <video className="video" width="375px" height="275px" controls>
+            <source src={KoffeeRecording} type="video/mp4" />
+          </video>
         </div>
       </div>
 
@@ -141,16 +136,6 @@ const SideProjects = () => {
 
       <div className={classes.SideProjectItemSecond}>
         {" "}
-        <div className={classes.ImageContainer}>
-          <video width="375px" height="275px" controls>
-            <source src={TrelloRecording} type="video/mp4" />
-          </video>
-          {/* <img
-            style={{ maxHeight: "375x", maxWidth: "375px" }}
-            src={require("../../assets/images/trellotrans.png")}
-            alt="codeimage"
-          /> */}
-        </div>
         <div className={classes.ProjectItemInfo}>
           <p className={classes.ProjectName}> Reda's Forgetful List v2</p>
           <p className={classes.ProjectItemBio}>
@@ -173,6 +158,11 @@ const SideProjects = () => {
               <GitHubIcon />
             </a>{" "}
           </div>
+        </div>
+        <div className={classes.ImageContainer}>
+          <video width="375px" height="275px" controls>
+            <source src={TrelloRecording} type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
